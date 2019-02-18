@@ -1,0 +1,609 @@
+@charset "utf-8";
+
+.clsList {
+	margin: -25px -35px 0;
+}
+.clsList:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.clsList li {
+	position: relative;
+	float: left;
+	width: 220px; height: 256px;
+	margin: 25px 35px;
+	background: #457dc9;
+	border-radius: 4px;
+	text-align: center;
+}
+.clsList li:after {
+	content: "";
+	position: absolute;
+	top: 8px; left: -9px; bottom: 8px;
+	width: 18px;
+	background: url(../images/bg_spring.png) repeat-y; 
+}
+.clsList li.disabled {
+	background: #bdcde2;
+}
+
+.clsList .cls {
+	position: relative;
+	display: block;
+	width: 144px;
+	margin: 25px auto 15px;
+	line-height: 78px;
+	background: #f2f7fb;
+	border: 6px solid #fff;
+	font-size: 18px;
+}
+.clsList .cls:after {
+	content: "";
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	border: 1px solid #000;
+}
+.clsList .year {
+	display: block;
+	width: 130px;
+	line-height: 26px;
+	margin: 0 auto;
+	background: rgba(255,255,255, .5) url(../images/icon_cls_set.png) no-repeat 95% 50%;
+	border-radius: 5px;
+}
+.clsList .people {
+	position: absolute;
+	right: 0; bottom: 0; left: 0;
+	height: 60px;
+	background: #53b8ef;
+	border-radius: 0 0 5px 5px;
+}
+.clsList li.disabled .people {background: #9ec8e7;}
+.clsList .people:after {
+	content: "";
+	position: absolute;
+	top: 0; bottom: 0; left: 50%;
+	border-left: 1px solid #7cc7f2;
+}
+.clsList li.disabled .people:after {border-color: #b0d2ec;}
+.clsList .people span {
+	float: left;
+	width: 50%;
+	padding-top: 8px;
+	color: #2a5389;
+	font-size: 13px;
+	line-height: 1.4;
+}
+.clsList .people em {
+	display: block;
+	color: #fff;
+	font-size: 18px;
+}
+.clsList .addClass {
+	background: #fffce7;
+	border: 2px dashed #ffdd94;
+	color: #666;
+	font-size: 22px;
+}
+.clsList .addClass a {
+	display: block;
+	height: 116px;
+	padding: 155px 0 0;
+	background: url(../images/btn_add_class.png) no-repeat 50% 40%;
+}
+.clsList .addClass:after {display: none;}
+@media all and (max-width: 1023px) {
+	.clsList {
+		margin: -25px -10px 0;
+		text-align: center;
+	}
+	.clsList li {
+		float: none;
+		display: inline-block;
+		width: 28%;
+		margin: 25px 10px;
+		box-sizing: border-box;
+		vertical-align: top;
+	}
+}
+@media all and (max-width: 767px) {
+	.clsList {
+		margin: -1.5rem -1rem;
+	}
+	.clsList li {
+		width: 40%;
+		height: 20rem;
+		margin: 1.5rem 1rem;
+	}
+	.clsList .cls {
+		width: 70%;
+		margin: 2rem auto 1rem;
+		line-height: 5rem;
+		font-size: 1.6rem;
+	}
+	.clsList .year {
+		width: 70%;
+		font-size: 1.4rem;
+	}
+	.clsList .people {
+		height: 6rem;
+	}
+	.clsList .people span {
+		padding-top: 1.2rem;
+		font-size: 1.2rem;
+	}
+	.clsList .people em {
+		font-size: 1.4rem;
+	}
+	.clsList .addClass a {
+		display: block;
+		height: 20rem;
+		padding-top: 12rem;
+		background-size: 5rem;
+		box-sizing: border-box;
+		font-size: 2rem;
+	}
+}
+
+.pointTop:after {content:"";display:block;clear:both;}
+.pointWrap {
+	position: relative;
+	float: left;
+	width: 410px; height: 335px;
+	background: #457dc9 url(../images/bg_record_point.png) no-repeat 50%;
+	text-align: center;
+}
+.pointWrap .total {
+	padding: 28px 0 0;
+	color: #fff;
+}
+.pointWrap .total .tit {
+	display: block;
+	font-size: 20px;
+}
+.pointWrap .total .point {font-size: 24px;}
+.pointWrap .total .point strong {font-size: 48px;}
+.pointWrap .cp {
+	position: absolute;
+	bottom: 15px; right: 25px;
+	font-size: 16px;
+	line-height: 1.2;
+	color: #fff;
+}
+.pointWrap .cp span {
+	display: block;
+	font-size: 15px;
+	color: #ffd220;
+}
+@media all and (max-width: 1023px) {
+	.pointWrap {
+		float: none;
+		width: 100%;
+	}
+}
+
+.pointList {
+	float: right;
+	width: 410px;
+	margin-top: -10px;
+}
+.pointList li {
+	overflow: hidden;
+	float: left;
+	width: 198px;
+	margin: 10px 0 0 5px;
+	text-align: center;
+}
+.pointList li .box {
+	display: block;
+	border: 1px solid #ccdee8;
+	border-radius: 3px;
+}
+@media all and (max-width: 1023px) {
+	.pointList {
+		float: none;
+		width: 100%;
+		margin: 5px 0 0;
+	}
+	.pointList ul {
+		margin: 0 -5px;
+	}
+	.pointList li {
+		width: 33.33%;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	.pointList li .box {
+		margin: 5px;
+	}
+}
+
+@media all and (max-width: 767px) {
+	.pointList li {width: 50%;}
+}
+.pointList .p {
+	position: relative;
+	display: block;
+	line-height: 71px;
+	padding-left: 64px;
+	color: #457dc9;
+	font-size: 26px;
+}
+.pointList .p:after {
+	content:"";
+	position: absolute;
+	top: 0; left: 10px;
+	width: 70px; height: 70px;
+	background-position: 50%;
+	background-repeat: no-repeat;
+}
+.pointList .t {
+	display: block;
+	line-height: 32px;
+	background: #f2f7fb;
+	color: #4c4c4c;
+	font-weight: 500;
+}
+.pointList .point1 .p:after {background-image: url(../images/bg_point_list01.png);}
+.pointList .point2 .p:after {background-image: url(../images/bg_point_list02.png);}
+.pointList .point3 .p:after {background-image: url(../images/bg_point_list03.png);}
+.pointList .point4 .p:after {background-image: url(../images/bg_point_list04.png);}
+.pointList .point5 .p:after {background-image: url(../images/bg_point_list05.png);}
+.pointList .point6 .p:after {background-image: url(../images/bg_point_list06.png);}
+
+
+.gameList ul {margin: -10px -5px 0;}
+.gameList ul:after {content:"";display:block;clear:both;}
+.gameList li {
+	float: left;
+	width: 50%;
+}
+.gameList .box {
+	position: relative;
+	display: block;
+	min-height: 120px;
+	margin: 10px 5px 0;
+	padding: 0 20px 20px 170px;
+	border: 1px solid #ccdee8;
+	border-radius: 3px;
+}
+.gameList .box:after {content:"";display:block;clear:both;}
+.gameList .img {
+	position: absolute;
+	top: 0; bottom: 0; left: 0;
+	width: 150px;
+	background: #f2f7fb;
+	text-align: center;
+	font-size: 0;
+}
+@media all and (max-width: 767px) {
+	.gameList ul {margin: 0;}
+	.gameList li {
+		float: none;
+		width: auto;
+	}
+	.gameList .box {
+		margin: 1rem 0 0;
+		padding: 0 1rem 1rem 13rem;
+	}
+	.gameList .img {
+		width: 12rem;
+	}
+	.gameList .img img {
+		width: 80%;
+	}
+}
+.gameList .img img {vertical-align: middle;}
+.gameList .img:after {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.gameList .tit {
+	display: block;
+	margin: 20px 0 15px;
+	color: #333;
+	font-size: 20px;
+}
+
+.gameList [class*="itemTit"] {
+	display: inline-block;
+	width: 60px;height: 25px;
+	margin: 0 5px 0 0;
+	line-height: 25px;
+	text-align: center;
+	border-radius: 25px;
+	color: #fff;
+}
+.gameList .item {
+	display: block;
+	margin: 5px 0 0;
+	font-size: 13px;
+}
+.gameList .itemTit1 {background: #4d4d4d;}
+.gameList .itemTit2 {background: #457dc9;}
+.gameList .itemTit3 {background: #1ec193;}
+.gameList .count span {
+	display: inline-block;
+	width: 22px; line-height: 22px;
+	background: #b3b3b3;
+	color: #fff;
+	text-align: center;
+	border-radius: 50%;
+}
+.gameList .count span.on {background: #1ec193;}
+.gameList .btnType2 {
+	width: 100%;
+	margin: 20px 0 0;
+}
+@media all and (max-width: 1023px) {
+	.gameList .count {
+		display: block;
+		margin: 5px 0 0;
+	}
+}
+.gameInfoSection {position: relative;}
+
+.searchDetail {
+	display: none;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	background: #fff;
+	border: 1px solid #3a66a2;
+	border-radius: 5px;
+	z-index: 2;
+}
+.searchDetail th,
+.searchDetail td {
+	border-bottom: 1px solid #ccdee8;
+	text-align: left;
+}
+.searchDetail th {
+	background: #f2f7fb;
+	color: #3a66a2;
+	padding: 12px 20px;
+}
+.searchDetail td {
+	padding: 0 20px;
+}
+.searchDetail .btnWrap {
+	padding: 20px;
+	text-align: right;
+}
+
+.layerWrap .gameList .box {margin: 0;}
+.layerWrap .gameList .txt {
+	margin: 0 0 10px;
+	padding: 5px 10px;
+	border: 1px solid #e9ecef;
+	border-radius: 4px;
+}
+.layerWrap .gameInfo {
+	margin: 20px 0 0;
+	padding: 0 0 0 5px;
+}
+.layerWrap .gameInfo ul {margin:-10px -8px 0;}
+.layerWrap .gameInfo ul:after {content:"";display:block;clear:both;}
+.layerWrap .gameInfo li {
+	float: left;
+	width: 33.33%;
+}
+@media all and (max-width: 767px) {
+	.layerWrap .gameInfo li {width: 50%;}
+}
+.layerWrap .gameInfo .box {
+	position: relative;
+	display: block;
+	margin: 10px 8px 0;
+	padding: 50px 0 10px;
+	border: 1px solid #ccdee8;
+	text-align: center;
+	font-size: 15px;
+	color: #333;
+	font-weight: 500;
+}
+.layerWrap .gameInfo .box span {
+	position: absolute;
+	top: 10px; left: -5px;
+	width: 112px; line-height: 30px;
+	padding: 0 0 0 15px;
+	color: #fff;
+	text-align: left;
+	font-weight: 400;
+	font-size: 13px;
+}
+.layerWrap .gameInfo .box span:after {
+	content: "";
+	position: absolute;
+	top: 0; right: 0;
+	border: 15px solid transparent;
+	border-right: 10px solid #fff;
+}
+.layerWrap .gameInfo .box .tit1 {background:#457dc9;}
+.layerWrap .gameInfo .box .tit2 {background:#1ec193;}
+.layerWrap .gameInfo .box .tit3 {background:#f2b526;}
+.layerWrap .gameInfo .box .tit4 {background:#333;}
+.layerWrap .gameInfo .box .tit5 {background:#ff7633;}
+.layerWrap .gameInfo .box .tit6 {background:#1da2e5;}
+
+.search {
+	padding: 20px 15px;
+	margin: 20px 0 40px;
+	border: 1px solid #3a66a2;
+	border-radius: 4px;
+}
+.search .row {
+	display: table;
+	width: 100%;
+}
+.search .cell {
+	display: table-cell;
+	padding: 0 2.5px;
+}
+.search .sel {width: 120px;}
+.search .btn {width: 60px;}
+.search select {width: 100%;}
+.search .inputTxt {width: 100%;}
+@media all and (max-width: 767px) {
+	.search {
+		position: relative;
+		padding: 1.5rem;
+	}
+	.search .row {
+		display: block;
+	}
+	.search .cell {
+		float: left;
+		display: block;
+		padding: 0 .2rem;
+		box-sizing: border-box;
+	}
+	.search .sel {width: 33.33%;}
+	.search .inpu {
+		width: 100%;
+		margin: .5rem 0 0;
+		padding-right: 65px;
+	}
+	.search .btn {
+		position: absolute;
+		bottom: 1.5rem; right: 1.75rem;
+	}
+}
+.loginWrap {
+	overflow: auto;
+	position: fixed;
+	top: 0; right: 0; bottom: 0; left: 0;
+	text-align: center;
+}
+.loginWrap:after {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.loginWrap .contents {
+	display: inline-block;
+	width: 560px;
+	vertical-align: middle;
+}
+.loginWrap .join {width: 640px;}
+
+.loginWrap .box {
+	position: relative;
+	overflow: hidden;
+	padding: 25px 30px 30px 280px;
+	background: #fff url(../images/bg_login.jpg) no-repeat;
+	border-radius: 22px;
+	box-shadow: 2px 2px 5px 5px rgba(0,0,0,.05)
+}
+.loginWrap h1 {
+	position: absolute;
+	top: 0; bottom: 0; left: 0;
+	width: 250px;
+	background: #fcbd10 url(../images/bg_bi_bot.jpg) no-repeat 0 100%;
+}
+.loginWrap h1 span {
+	display: block;
+	height: 100%;
+	background: url(../images/bg_bi_top.jpg) no-repeat;
+}
+.loginWrap h1 span:after {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.loginWrap h1 img {vertical-align: middle;}
+.loginWrap h2 {font-size: 20px;}
+.loginWrap .tabMenu li {width: 50%;}
+.loginWrap .tabMenu li button {width: 100%;}
+.loginWrap .tabMenu .active button {background: #fcbd10;}
+.loginWrap .loginField .inputTxt {
+	width: 100%; height: 35px;
+	margin: 0 0 10px;
+	padding: 0 30px;
+	border: 0;
+	border-bottom: 1px solid #000;
+	border-radius: 0;
+}
+.loginWrap .loginField .id {background:url(../images/icon_login_id.png) no-repeat 8px 50%;}
+.loginWrap .loginField .pass {background:url(../images/icon_login_pass.png) no-repeat 8px 50%;}
+
+.loginWrap .loginOpt {text-align: right;}
+.loginWrap .loginOpt .link {color: #457dc9;}
+.loginWrap .loginOpt .inputChk {
+	float: left;
+	font-size: 13px;
+}
+.loginWrap .loginOpt .inputChk span:before {
+	background-color: #fcbd10;
+	background-image: url(../images/bg_input_chk2.png);
+	border: 0;
+	border-radius: 3px;
+}
+.loginWrap .loginOpt .inputChk input:checked ~ span {color: #000;}
+
+.loginWrap .btn {
+	width: 130px; height: 40px;
+	margin: 25px 0 0;
+	color: #fff;
+	background: #fcbd10;
+	font-size: 16px;
+	border-radius: 40px;
+}
+.loginWrap .joinTxt {
+	position: relative;
+	text-align: right;
+	margin: 10px 0 0;
+	padding: 0 40px 0 0;
+	font-size: 13px;
+}
+
+.loginWrap .joinTxt select {
+	margin: 0 0 0 10px;
+} 
+
+.loginWrap .txtGreeting {
+	margin: 0 0 20px;
+	color: #457dc9;
+	font-size: 26px;
+	font-weight: 500;
+}
+.loginWrap .joinField {margin: 30px 0 0;}
+
+.loginWrap .joinField .line {
+	padding: 5px 0 0;
+	margin: 0 0 10px;
+	border-top: 1px solid #e9ecef;
+	border-bottom: 1px solid #e9ecef;
+}
+.loginWrap .joinField .row {
+	position: relative;
+	margin: 5px 0 0;
+	padding-left: 100px;
+	text-align: left;
+}
+.loginWrap .joinField .row label {
+	position: absolute;
+	top: 5px; left: 0;
+}
+.loginWrap .joinField .row .tip {
+	display: block;
+	padding: 5px;
+	font-size: 12px;
+	color: #457dc9;
+	letter-spacing: -1px;
+}
+@media all and (max-width: 767px) {
+	.loginWrap .contents {width: 80%;}
+	.loginWrap .box {padding: 2rem 1.5rem;}
+	.loginWrap h1 {display: none;}
+	.loginWrap .joinTxt {padding: 0;}
+	.loginWrap .joinField {margin: 2rem 0 0;}
+	.loginWrap .joinField .inputTxt {width: 100%;}
+}
+
