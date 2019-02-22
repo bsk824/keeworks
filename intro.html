@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="/resource/font/style.css">
+	<link rel="stylesheet" type="text/css" href="/resource/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/resource/css/style.css">
+	<script type="text/javascript" src="/resource/js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="/resource/js/ui.js"></script>
+	<!--[if lt IE 9]>
+		<script src="/resource/js/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<div id="wrap">
+		
+		<!-- header -->
+		<header id="header">
+			<div class="headTop">
+				<h1 class="logo"><img src="/resource/images/logo.png" alt="keeworks"></h1>
+				<div class="search">
+					<button type="button" class="btnSearch">Search</button>
+				</div>
+			</div>
+			<nav id="gnb">
+				<ul class="menu">
+					<li><a href="#">ABOUT</a>
+						<div class="subMenu">
+							<strong class="cate">ABOUT</strong>
+							<ul class="list">
+								<li><a href="#">파트너</a></li>
+								<li><a href="#">비전</a></li>
+								<li><a href="#">조직도</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">SOLUTION</a>
+						<div class="subMenu">
+							<strong class="cate">SOLUTION</strong>
+							<ul class="list">
+								<li><a href="#">KEY DESIGN</a></li>
+								<li><a href="#">광학 계산기</a></li>
+								<li><a href="#">C-mount 계산기</a></li>
+								<li><a href="#">광학 시스템 설계 엔진</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">제품</a>
+						<div class="subMenu">
+							<strong class="cate">제품</strong>
+							<div class="subMenu2">
+								<div class="list">
+									<strong class="subCate">카메라</strong>
+									<ul class="subList">
+										<li><a href="#">Area</a></li>
+										<li><a href="#">Line scan</a></li>
+										<li><a href="#">Smart</a></li>
+									</ul>
+								</div>
+								<div class="list">
+									<strong class="subCate">렌즈</strong>
+									<ul class="subList">
+										<li><a href="#">C-mount</a></li>
+										<li><a href="#">F-mount</a></li>
+										<li><a href="#">Large format</a></li>
+										<li><a href="#">Telecentric</a></li>
+									</ul>
+								</div>
+								<div class="list">
+									<strong class="subCate">렌즈</strong>
+									<ul class="subList">
+										<li><a href="#">Area light</a></li>
+										<li><a href="#">Line light</a></li>
+										<li><a href="#">Effilux</a></li>
+									</ul>
+									<strong class="subCate">보드</strong>
+									<ul class="subList">
+										<li><a href="#">CXP</a></li>
+										<li><a href="#">CL</a></li>
+										<li><a href="#">Analog</a></li>
+										<li><a href="#">GigE</a></li>
+									</ul>
+								</div>
+								<div class="list">
+									<strong class="subCate">라이브러리</strong>
+									<ul class="subList">
+										<li><a href="#">Matrox</a></li>
+									</ul>
+									<strong class="subCate">3D</strong>
+									<ul class="subList">
+										<li><a href="#">Automation technology</a></li>
+										<li><a href="#">IFM</a></li>
+										<li><a href="#">Laon</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li><a href="#">다운로드</a>
+						<div class="subMenu">
+							<strong class="cate">다운로드</strong>
+							<ul class="list">
+								<li><a href="#">SDK</a></li>
+								<li><a href="#">제품브로셔</a></li>
+								<li><a href="#">샘플소스</a></li>
+								<li><a href="#">기타</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">고객지원</a>
+						<div class="subMenu">
+							<strong class="cate">다운로드</strong>
+							<ul class="list">
+								<li><a href="#">뉴스레터</a></li>
+								<li><a href="#">견적&amp;제품문의</a></li>
+								<li><a href="#">기술문의</a></li>
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">원격지원</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!-- //header -->
+
+		<!-- container -->
+		<div id="container">
+			<link href="/resource/js/plugin/jqvmap.css" media="screen" rel="stylesheet" type="text/css"/>
+			<script type="text/javascript" src="/resource/js/plugin/jquery.vmap.js"></script>
+			<script type="text/javascript" src="/resource/js/plugin/jquery-jvectormap-world-mill-en.js" charset="utf-8"></script>
+			<script>
+				var scope = {};
+				scope.markerColor = '#cc0000';
+				scope.bgColor = 'transparent';
+				scope.scale = 2;
+				scope.scaleColors = ["#454545","#5e5e5e"];
+				
+				var seriesData = {
+					regions : [
+						{ values : { CA:'#878c9a' } },
+						{ values : { FR:'#878c9a' } },
+						{ values : { AU:'#878c9a' } },
+						{ values : { GB:'#878c9a' } },
+						{ values : { RU:'#878c9a' } },
+						{ values : { BR:'#878c9a' } },
+						{ values : { IN:'#878c9a' } },
+						{ values : { CN:'#878c9a' } },
+						{ values : { US:'#878c9a' } },
+						{ values : { SA:'#878c9a' } },
+						
+					]	    
+				}; 
+				
+				var markersData = 	[
+					{latLng: [55.65, 12.37],	name: 'Milestone System'},
+					{latLng: [34.15, -118.25], name: 'Replay Technologies'},
+					{latLng: [56.45, 13.13], 	name: 'AXIS'},
+					{latLng: [25.09, 121.52], 	name: 'NUUO'},
+					{latLng: [35.62, 139.77], 	name: 'SONY'},
+					{latLng: [55.18, -1.58], 	name: 'RAYTEC'},
+					{latLng: [30.20, 120.22], 	name: 'HIKVISION'},
+				];
+					
+				$(function(){
+					$('#world-map-markers').vectorMap({
+					map: 'world_mill_en',
+					scaleColors: ['#C8EEFF', '#0071A4'],
+					normalizeFunction: 'polynomial',
+					hoverOpacity: 0.7,
+					hoverColor: false,	
+						
+					markerStyle: {
+						initial: {
+						fill: '#666',
+						stroke: '#383f47'
+						}
+					},
+					regionStyle: { initial: { fill: '#bbbec6' } },  //Changed this line
+					series:seriesData,
+					backgroundColor: '#f5f7fa',
+					markers: markersData
+					});
+				});
+			</script>
+			<div id="world-map-markers" style="width:100%; height:468px;"></div>
+			
+		</div>
+		<!-- //container -->
+		<!-- footer -->
+		<footer id="footer">
+
+		</footer>
+		<!-- //footer -->
+	</div>
+
+</body>
+</html>
