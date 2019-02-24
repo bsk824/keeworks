@@ -16,12 +16,6 @@
 #gnb .subMenu > .list > li > strong,
 #gnb .subMenu > .list > li > a {font-size: 14px;}
 
-@media screen and (min-width: 768px) {
-	#gnb {
-		display: block !important;
-		height: 60px !important;
-	}
-}
 @media screen and (max-width: 767px) {
 	body, input, select, textarea, button {font-size: 1.4rem;}
 	.menuOn {overflow: hidden;}
