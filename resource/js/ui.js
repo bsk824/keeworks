@@ -35,6 +35,10 @@
 	fontSize();
 })();
 
+$(window).resize(function(){
+	fontSize();
+});
+
 function deviceChk() {
 	var win = $(window);
 	var winW = win.width();
@@ -45,19 +49,34 @@ function deviceChk() {
 function fontSize() {
 	var winW = $(window).width();
 	if (winW <= 560) {
-		var fontSize = w / 5.76;
+		var fontSize = winW / 5.76;
 		$('html').css('font-size', Math.floor(fontSize*100)/100 + '%');
 	} else {
 		$('html').css('font-size','62.5%');
 	}
 }
-$(window).resize(function(){
-	fontSize();
-});
+function search(obj, state) {
+	var $this = $(obj);
+	(state === 'open') ? $this.closest('.search').addClass('searchOpen') : $this.closest('.search').removeClass('searchOpen')
+}
+function menu() {
+	var wrap = $('html, body');
+	var gnb = $('#gnb');
+	gnb.stop().slideToggle(300);
+	wrap.toggleClass('menuOn');
+}
+function subOpen(obj) {
+	var $this = $(obj);
+	$this.next('.subMenu').stop().slideDown(300).parent().addClass('open').siblings().removeClass('open').find('.subMenu').stop().slideUp(300);
+}
+function subClose() {
+	var openMenu = $('#gnb .open');
+	openMenu.removeClass('open').find('.subMenu').slideUp(300);
 
+}
 // 쿠키 설정
 function setCookie(name, value, expiredays) {
-	var today = new Date();		
+	var today = new Date();
 	today.setDate( today.getDate() + expiredays );
 	document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + today.toGMTString() + ";"
 }

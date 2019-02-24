@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="/resource/font/style.css">
 	<link rel="stylesheet" type="text/css" href="/resource/css/common.css">
 	<link rel="stylesheet" type="text/css" href="/resource/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/resource/css/resp.css" media="screen and (max-width: 1070px)">
 	<script type="text/javascript" src="/resource/js/jquery-1.12.2.min.js"></script>
 	<script type="text/javascript" src="/resource/js/ui.js"></script>
 	<!--[if lt IE 9]>
@@ -19,18 +20,23 @@
 	<div id="wrap">
 		
 		<!-- header -->
-		<header id="header">
+		<header id="header" onmouseleave="subClose()">
 			<div class="headTop">
-				<div class="inner">
-					<h1 class="logo"><a href="#"><img src="/resource/images/logo.png" alt="keeworks"></a></h1>
-					<div class="search">
-						<button type="button" class="btnSearch">Search</button>
-					</div>
-				</div>
+				<h1 class="logo"><a href="#"><img src="/resource/images/logo.png" alt="keeworks"></a></h1>
+				<button type="button" class="btnMenu" onclick="menu()"><span>메뉴</span></button>
 			</div>
 			<nav id="gnb">
+				<div class="search">
+					<fieldset class="inputSearch">
+						<legend>검색어 입력</legend>
+						<button type="button" class="btnSearchClose" onclick="search(this, 'close');">닫기</button>
+						<input type="text" class="inputTxt" placeholder="검색어를 입력하세요.">
+						<button type="button" class="btnSearch">Search</button>
+					</fieldset>
+					<button type="button" class="btnSearch" onclick="search(this, 'open');">Search</button>
+				</div>
 				<ul class="menu">
-					<li><a href="#">ABOUT</a>
+					<li><a href="#" onmouseenter="subOpen(this);">ABOUT</a>
 						<div class="subMenu">
 							<strong class="cate">ABOUT</strong>
 							<ul class="list menu3">
@@ -40,7 +46,7 @@
 							</ul>
 						</div>
 					</li>
-					<li><a href="#">SOLUTION</a>
+					<li><a href="#" onmouseenter="subOpen(this);">SOLUTION</a>
 						<div class="subMenu">
 							<strong class="cate">SOLUTION</strong>
 							<ul class="list menu4">
@@ -51,12 +57,12 @@
 							</ul>
 						</div>
 					</li>
-					<li><a href="#">제품</a>
-						<div class="subMenu">
+					<li><a href="#" onmouseenter="subOpen(this);">제품</a>
+						<div class="subMenu menuProd">
 							<strong class="cate">제품</strong>
 							<ul class="list menu4">
 								<li>
-									<a href="#">카메라</a>
+									<strong>카메라</strong>
 									<ul class="subList">
 										<li><a href="#">Area</a></li>
 										<li><a href="#">Line scan</a></li>
@@ -64,7 +70,7 @@
 									</ul>
 								</li>
 								<li>
-									<a href="#">렌즈</a>
+									<strong>렌즈</strong>
 									<ul class="subList">
 										<li><a href="#">C-mount</a></li>
 										<li><a href="#">F-mount</a></li>
@@ -73,13 +79,13 @@
 									</ul>
 								</li>
 								<li>
-									<a href="#">렌즈</a>
+									<strong>조명</strong>
 									<ul class="subList">
 										<li><a href="#">Area light</a></li>
 										<li><a href="#">Line light</a></li>
 										<li><a href="#">Effilux</a></li>
 									</ul>
-									<a href="#">보드</a>
+									<strong>보드</strong>
 									<ul class="subList">
 										<li><a href="#">CXP</a></li>
 										<li><a href="#">CL</a></li>
@@ -88,11 +94,11 @@
 									</ul>
 								</li>
 								<li>
-									<a href="#">라이브러리</a>
+									<strong>라이브러리</strong>
 									<ul class="subList">
 										<li><a href="#">Matrox</a></li>
 									</ul>
-									<a href="#">3D</a>
+									<strong>3D</strong>
 									<ul class="subList">
 										<li><a href="#">Automation technology</a></li>
 										<li><a href="#">IFM</a></li>
@@ -102,7 +108,7 @@
 							</ul>
 						</div>
 					</li>
-					<li><a href="#">다운로드</a>
+					<li><a href="#" onmouseenter="subOpen(this);">다운로드</a>
 						<div class="subMenu">
 							<strong class="cate">다운로드</strong>
 							<ul class="list menu4">
@@ -113,7 +119,7 @@
 							</ul>
 						</div>
 					</li>
-					<li><a href="#">고객지원</a>
+					<li><a href="#" onmouseenter="subOpen(this);">고객지원</a>
 						<div class="subMenu">
 							<strong class="cate">고객지원</strong>
 							<ul class="list menu5">
