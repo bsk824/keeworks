@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="/resource/css/style.css">
 	<link rel="stylesheet" type="text/css" href="/resource/css/resp.css" media="screen and (max-width: 1070px)">
 	<script type="text/javascript" src="/resource/js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="/resource/js/swiper.min.js"></script>
 	<script type="text/javascript" src="/resource/js/ui.js"></script>
 	<!--[if lt IE 9]>
 		<script src="/resource/js/html5shiv.min.js"></script>
@@ -139,6 +140,81 @@
 		<!-- container -->
 		<div id="container">
 
+			<div class="mainSlide">
+
+				<div class="slide">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide" style="background-image:url('/resource/images/main/img_slide1.jpg');"></li>
+						<li class="swiper-slide" style="background-image:url('/resource/images/main/img_slide1.jpg');"></li>
+					</ul>
+				</div>
+				<div class="slideControl">
+					<span class="slidePage">
+					</span>
+					<button type="button" class="btnStop" onclick="slideControll(this, 'stop');">자동 슬라이드 정지</button>
+					<button type="button" class="btnStart" onclick="slideControll(this, 'start');">자동 슬라이드 시작</button>
+				</div>
+				<div class="slideNav">
+					<span class="slideNext"></span>
+					<span class="slidePrev"></span>
+				</div>
+
+			</div>
+			<script>mainSlide();</script>
+
+			<section class="section">
+
+				<div class="itemsSlide">
+					<div class="slide">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<ul class="itemList">
+									<li class="big">
+										<a href="#" style="background-image:url('/resource/images/main/img_item1_1.jpg');">
+											<span class="sortA">NEW</span>
+											<strong class="tit">VT-16K5X-H140</strong>
+											<span class="info">16384x256 / 140kHz / M95 CoaxPress / 5.0um</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" style="background-image:url('/resource/images/main/img_item1_2.jpg');">
+											<span class="sortB">고해상도</span>
+											<strong class="tit">VT-3K7C-E100</strong>
+											<span class="info">3200x32 / 100kHz / M42 / Camera Link / 7.0um</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" style="background-image:url('/resource/images/main/img_item1_3.jpg');">
+											<span class="sortC">고속처리</span>
+											<strong class="tit">MV-CL020-41GC</strong>
+											<span class="info">2K Line Scan, CMOS, GigE Camera</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" style="background-image:url('/resource/images/main/img_item1_4.jpg');">
+											<span class="sortD">정밀노출</span>
+											<strong class="tit">MV-CL020-41GC</strong>
+											<span class="info">2K Line Scan, CMOS, GigE Camera</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" style="background-image:url('/resource/images/main/img_item1_5.jpg');">
+											<span class="sortB">고해상도</span>
+											<strong class="tit">VT-3K7C-E100</strong>
+											<span class="info">3200x32 / 100kHz / M42 / Camera Link / 7.0um</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="slidePage">
+					</div>
+				</div>
+				<script>itemsSlide();</script>
+				
+			</section>
 		</div>
 		<!-- //container -->
 

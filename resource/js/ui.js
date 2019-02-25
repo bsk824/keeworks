@@ -2,7 +2,7 @@
 	var agent = navigator.userAgent.toLocaleLowerCase();
 	var html = document.getElementsByTagName('html')[0];
 	var htmlClass = html.getAttribute('class');
-	var device, deviceVer, osVer, ver = null;
+	var device, deviceVer, ver = null;
 	if(agent.indexOf('mobile') > -1) { //모바일 체크
 		ver = 'mobile';
 		if(agent.indexOf('iphone') > -1 || agent.indexOf('ipad') > -1) { //ios 체크
@@ -72,6 +72,58 @@ function subOpen(obj) {
 function subClose() {
 	var openMenu = $('#gnb .open');
 	openMenu.removeClass('open').find('.subMenu').slideUp(300);
+}
+
+var slideObj = {};
+function mainSlide() {
+	var obj = 'mainSlide';
+	var slide = new Swiper('.' + obj + ' .slide', {
+		loop: true,
+		speed: 500,
+		autoplay: {
+			delay: 3000,
+		},
+		navigation: {
+			nextEl: '.' + obj + ' .slideNext',
+			prevEl: '.' + obj + ' .slidePrev',
+		},
+		pagination: {
+			el: '.' + obj + ' .slidePage',
+			clickable: true,
+			renderBullet: function (index, className) {
+				return '<a href="#" class="' + className + '">' + (index + 1) + '</a>';
+			}
+		}
+	});
+	slideObj.mainSlide = slide;
+}
+function itemsSlide() {
+	var obj = 'itemsSlide';
+	var slide = new Swiper('.' + obj + ' .slide', {
+		loop: true,
+		speed: 500,
+		autoplay: {
+			delay: 3000,
+		},
+		pagination: {
+			el: '.' + obj + ' .slidePage',
+			clickable: true,
+			renderBullet: function (index, className) {
+				return '<a href="#" class="' + className + '">' + (index + 1) + '</a>';
+			}
+		}
+	});
+	slideObj.itemsSlide = slide;
+}
+function slideControll(obj, state) {
+	var $this = $(obj);
+	if(state === 'stop') {
+		slideObj.mainSlide.autoplay.stop();
+		$this.parent().addClass('stop');
+	} else {
+		slideObj.mainSlide.autoplay.start();
+		$this.parent().removeClass('stop');
+	}
 
 }
 // 쿠키 설정

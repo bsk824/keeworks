@@ -1,1 +1,103 @@
 @charset "utf-8";
+
+.mainSlide {
+	position: relative;
+}
+.mainSlide .swiper-slide {
+	height: 888px;
+}
+.mainSlide .slideControl {
+	position: absolute;
+	left: 0; right: 0; bottom: 30px;
+	text-align: center;
+}
+.mainSlide .slideControl [class*="btn"] {
+	width: 26px; height: 26px;
+	margin-left: 10px;
+	border: 1px solid #fff;
+	font: 0/0 a;
+	vertical-align: middle;
+}
+.mainSlide .slideControl .btnStop:after,
+.mainSlide .slideControl .btnStop:before {
+	content: "";
+	display: inline-block;
+	width: 2px; height: 10px;
+	margin: 0 2px;
+	background: #fff;
+}
+.mainSlide .slideControl .btnStart {display: none;}
+.mainSlide .slideControl .btnStart:after {
+	content: "";
+	border: 5px solid transparent;
+	border-left: 6px solid #fff;
+	border-right: 0;
+}
+.mainSlide .stop .btnStart {display: inline-block;}
+.mainSlide .stop .btnStop {display: none;}
+.mainSlide .slidePage a {
+	display: inline-block;
+	width: 6px; height: 6px;
+	margin: 0 3px;
+	font: 0/0 a;
+	background: rgba(255,255,255,.5);
+	border-radius: 6px;
+	transition: all .3s;
+	vertical-align: middle;
+}
+.mainSlide .slidePage [class*="active"] {
+	width: 38px;
+	background: #fff;
+}
+.mainSlide .slideNav {
+	position: absolute;
+	top: 50%; right: 0; left: 0;
+	max-width: 1070px;
+	margin: -35px auto 0;
+	font: 0/0 a;
+}
+.mainSlide .slideNav span {
+	cursor: pointer;
+	position: absolute;
+	width: 35px;
+	height: 70px;
+	outline: none;
+}
+.mainSlide .slideNav span:before,
+.mainSlide .slideNav span:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	width: 50px;
+	height: 1px;
+	background: #fff;
+	transition: all .3s;
+}
+.mainSlide .slideNav .slidePrev {left: 0;}
+.mainSlide .slideNav .slidePrev:before {left:1px;transform: rotate(45deg);transform-origin: 0 100%;}
+.mainSlide .slideNav .slidePrev:after {left:1px;transform: rotate(-45deg);transform-origin: 0 100%;}
+.mainSlide .slideNav .slideNext {right: 0;}
+.mainSlide .slideNav .slideNext:before {right:1px;transform: rotate(-45deg);transform-origin: 100% 100%;}
+.mainSlide .slideNav .slideNext:after {right:1px;transform: rotate(45deg);transform-origin: 100% 100%;}
+.mainSlide .slideNav .slideNext:hover:before,
+.mainSlide .slideNav .slideNext:hover:after,
+.mainSlide .slideNav .slidePrev:hover:before,
+.mainSlide .slideNav .slidePrev:hover:after {transform: rotate(0);}
+
+.itemsSlide .itemList li {
+	position: relative;
+	float: left;
+	width: 25%;
+	padding-top: 25%;
+}
+.itemsSlide .itemList li.big {
+	width: 50%;
+	padding-top: 50%;
+}
+.itemsSlide .itemList a {
+	position: absolute;
+	top: 2.5px; right: 2.5px; bottom: 2.5px; left: 2.5px;
+	background-size: cover;
+	background-position: 50%;
+	background-repeat: no-repeat;
+}
