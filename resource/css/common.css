@@ -206,6 +206,26 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav
 	margin: 0 auto;
 }
 
+#footer {
+	position: relative;
+	max-width: 1070px;
+	margin: 100px auto 0;
+	padding: 30px 0;
+	border-top: 1px solid #b2b2b2;
+	color: #808080;
+}
+#footer .corpLink {
+	position: absolute;
+	top: 20px; right: 0;
+}
+#footer .corpLink img {vertical-align: middle;}
+#footer small {
+	display: inline-block;
+	padding-left: 5px;
+	border-left: 1px solid #808080;
+	font-size: 14px;
+	line-height: 1;
+}
 
 #ui-datepicker-div {display:none;border:1px solid #bbb;background:#fff;border-radius:9px;}
 .ui-datepicker-trigger {position:absolute;right:12px;top:0;width:40px;height:40px;border-color:#bbb;background:#eee;}

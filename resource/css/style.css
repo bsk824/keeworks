@@ -5,6 +5,8 @@
 }
 .mainSlide .swiper-slide {
 	height: 888px;
+	background-position: 50%;
+	background-size: cover;
 }
 .mainSlide .slideControl {
 	position: absolute;
@@ -84,13 +86,14 @@
 .mainSlide .slideNav .slidePrev:hover:before,
 .mainSlide .slideNav .slidePrev:hover:after {transform: rotate(0);}
 
+.itemsSlide {margin: 95px -5px 0;}
 .itemsSlide .itemList li {
 	position: relative;
 	float: left;
 	width: 25%;
 	padding-top: 25%;
 }
-.itemsSlide .itemList li.big {
+.itemsSlide .itemList li:first-child {
 	width: 50%;
 	padding-top: 50%;
 }
@@ -100,4 +103,40 @@
 	background-size: cover;
 	background-position: 50%;
 	background-repeat: no-repeat;
+	color: #fff;
 }
+.itemsSlide .itemList .cont {
+	position: absolute;
+	bottom: 20px; right: 20px; left: 20px;
+}
+.itemsSlide [class*="sort"] {
+	display: block;
+	width: 68px; height: 20px;
+	text-align: center;
+	font-size: 12px;
+}
+.itemsSlide .sortA {background: #fea019;}
+.itemsSlide .sortB {background: #2a58cb;}
+.itemsSlide .sortC {background: #e35a48;}
+.itemsSlide .sortD {background: #a34eeb;}
+.itemsSlide .tit {
+	display: block;
+	margin: 10px 0 0;
+	font-size: 18px;
+	font-weight: 500;
+}
+.itemsSlide .itemList li:first-child .tit {
+	font-size: 36px;
+}
+.itemsSlide .slidePage {
+	margin: 15px 0 0;
+	text-align: center;
+}
+.itemsSlide .slidePage a {
+	display: inline-block;
+	width: 10px; height: 10px;
+	margin: 0 5px;
+	border: 1px solid #333;
+	font: 0/0 a;
+}
+.itemsSlide .slidePage [class*="active"] {background: #333;}
