@@ -140,136 +140,104 @@
 		<!-- container -->
 		<div id="container">
 
-			<h2 class="pageTitle">Camera</h2>
+			<h2 class="pageTitle">C-mount 계산기</h2>
 
 			<section class="section">
-				<div class="tabMenu">
-					<ul>
-						<li class="active"><button type="button" onclick="tabActive(this);">Area</button></li>
-						<li><button type="button" onclick="tabActive(this);">Line scan</button></li>
-						<li><button type="button" onclick="tabActive(this);">Smart</button></li>
-					</ul>
+				<h3 class="subTitle">01. Select camera series and models.</h3>
+				<div class="cameraSearch">
+					<div class="box">
+						<label for="cSeries" class="tit">Camera Series</label>
+						<span class="cont">
+							<select name="" id="cameraSeries" style="width:100%;">
+								<option value="">선택</option>
+							</select>
+						</span>
+					</div>
+					<div class="box">
+						<label for="cModels" class="tit">Camera Models</label>
+						<span class="cont">
+							<select name="" id="cModels" style="width:100%;">
+								<option value="">선택</option>
+							</select>
+						</span>
+					</div>
 				</div>
-				<div class="chkSelBox">
-					<table>
-						<caption>검색 선택</caption>
-						<tbody>
-							<tr>
-								<th scope="row">Select a Product</th>
-								<td>
-									<label class="inputChk"><input type="checkbox"> <span>전체</span></label>
-									<label class="inputChk"><input type="checkbox"> <span>CAMERALINK</span></label>
-									<label class="inputChk"><input type="checkbox"> <span>ANALOG</span></label>
-									<label class="inputChk"><input type="checkbox"> <span>COAXPRESS</span></label>
-									<label class="inputChk"><input type="checkbox"> <span>DVI/SDI</span></label>
-									<label class="inputChk"><input type="checkbox"> <span>GIGE</span></label>
-									<label class="inputChk"><input type="checkbox"> <span>TV FORMAT</span></label>
-									<label class="inputChk"><input type="checkbox"> <span>USB 2.0 / 3.0</span></label>
-									<label class="inputChk"><input type="checkbox"> <span>OPT</span></label>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row">Resolution</th>
-								<td>
-									<label class="inputChk"><input type="checkbox"> <span>전체</span></label>
-									<label class="inputChk"><input type="checkbox"> <span>0.3~1메가</span></label>
-									<label class="inputChk"><input type="checkbox"> <span>1~5메가</span></label>
-									<label class="inputChk"><input type="checkbox"> <span>5~20메가</span></label>
-									<label class="inputChk"><input type="checkbox"> <span>20메가 이상</span></label>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row">Frame Rate</th>
-								<td>
-									<label class="inputChk"><input type="checkbox"> <span>전체</span></label>
-									<label class="inputChk"><input type="checkbox"> <span>30프레임 이하</span></label>
-									<label class="inputChk"><input type="checkbox"> <span>30~100프레임</span></label>
-									<label class="inputChk"><input type="checkbox"> <span>100~300 프레임</span></label>
-									<label class="inputChk"><input type="checkbox"> <span>300프레임 이상</span></label>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row">Sensor</th>
-								<td>
-									<label class="inputChk"><input type="checkbox"> <span>전체</span></label>
-									<label class="inputChk"><input type="checkbox"> <span>컬러</span></label>
-									<label class="inputChk"><input type="checkbox"> <span>모노</span></label>
-									<label class="inputChk"><input type="checkbox"> <span>UV</span></label>
-									<label class="inputChk"><input type="checkbox"> <span>IR</span></label>
-									<label class="inputChk"><input type="checkbox"> <span>InGaAs</span></label>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row">Maker</th>
-								<td>
-									<label class="inputChk"><input type="checkbox"> <span>전체</span></label>
-									<label class="inputChk"><input type="checkbox"> <span>JAI</span></label>
-									<label class="inputChk"><input type="checkbox"> <span>FLIR</span></label>
-									<label class="inputChk"><input type="checkbox"> <span>SENTECH</span></label>
-									<label class="inputChk"><input type="checkbox"> <span>LAONPEOPLE</span></label>
-									<label class="inputChk"><input type="checkbox"> <span>HAMAMATSU</span></label>
-									<label class="inputChk"><input type="checkbox"> <span>XENICS</span></label>
-									<label class="inputChk"><input type="checkbox"> <span>PHOTON FOCUS</span></label>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row"></th>
-								<td>
-									<label class="inputChk"><input type="checkbox"> <span>단종</span></label>
-									<span class="result">
-										<b class="ftColor1">전체: 243</b>
-										<button type="button" class="btnType1">검색</button>
-										<button type="button" class="btnType2">초기화</button>
-									</span>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
+			</section>
+			<section class="section">
+				<h3 class="subTitle">02. Please enter as many values as possible. Missing values will be calculated automatically.</h3>
+				<div class="lensCalcBox">
+					<div class="tabMenu">
+						<ul>
+							<li class="active"><button type="button" onclick="tabActive(this);">FA Lens</button></li>
+							<li><button type="button" onclick="tabActive(this);">Telecentric Lens</button></li>
+						</ul>
+					</div>
+					<div class="tabContents">
+						<div class="tabCont active">
+							<ul class="optionList">
+								<li>Option 1: Working distance and object height or object width</li>
+								<li>Option 2: One angle of view (and working distance optional)</li>
+								<li>Option 3: Focal length (and working distance optional)</li>
+							</ul>
+							<div class="imgWrap">
+								<img src="/resource/images/contents/img_fa_lens.jpg" alt="">
+								<span class="inputUnit1">
+									<input type="text" id="inputUnit1" class="inputTxt">
+									<label for="inputUnit1">Lens focal length (mm)</label>
+								</span>
+								<span class="inputUnit2">
+									<input type="text" id="inputUnit2" class="inputTxt">
+									<label for="inputUnit2">Working distance (mm)</label>
+								</span>
+								<span class="inputUnit3">
+									<input type="text" id="inputUnit3" class="inputTxt">
+									<label for="inputUnit3">Viewing angle-Horizontal (°)</label>
+								</span>
+								<span class="inputUnit4">
+									<input type="text" id="inputUnit4" class="inputTxt">
+									<label for="inputUnit4">Viewing angle-Vertical (°)</label>
+								</span>
+								<span class="inputUnit5">
+									<input type="text" id="inputUnit5" class="inputTxt">
+									<label for="inputUnit5">Object width(mm)</label>
+								</span>
+								<span class="inputUnit6">
+									<input type="text" id="inputUnit6" class="inputTxt">
+									<label for="inputUnit6">Object height(mm)</label>
+								</span>
+							</div>
+						</div>
+						<div class="tabCont">
+							<ul class="optionList">
+								<li>Option 1: Working distance and object height or object width <label><input type="checkbox" id="pointSource" class="checkbox"> Support point source</label></li>
+								<li>Option 2: One angle of view (and working distance optional)</li>
+								<li>Option 3: Focal length (and working distance optional)</li>
+							</ul>
+							<div class="imgWrap">
+								<img src="/resource/images/contents/img_tel_lens.jpg" alt="">
+								<span class="inputUnit7">
+									<select name="" id="inputUnit7">
+										<option value="">defalut</option>
+									</select>
+									<label for="inputUnit7">Object distance（mm）</label>
+								</span>
+								<span class="inputUnit8">
+									<input type="text" id="inputUnit8" class="inputTxt">
+									<label for="inputUnit8">Amplification Factor</label>
+								</span>
+								<span class="inputUnit9">
+									<input type="text" id="inputUnit9" class="inputTxt">
+									<label for="inputUnit9">Object width(mm)</label>
+								</span>
+								<span class="inputUnit10">
+									<input type="text" id="inputUnit10" class="inputTxt">
+									<label for="inputUnit10">Object height(mm)</label>
+								</span>
+							</div>
 
-				<div class="listHead">
-					<span class="btn">
-						<button type="button" class="btnType1">출력하기</button>
-						<button type="button" class="btnType1">비교</button>
-						<button type="button" class="btnType2">담기</button>
-					</span>
+						</div>
+					</div>
 				</div>
-				<div class="tableList">
-					<table>
-						<caption>검색결과</caption>
-						<thead>
-							<tr>
-								<th scope="col"><label class="inputChk"><input type="checkbox"> <span>모델</span></label></th>
-								<th scope="col">센서</th>
-								<th scope="col">CCD/CMOS</th>
-								<th scope="col">Mono/Color</th>
-								<th scope="col">메가</th>
-								<th scope="col">해상도</th>
-								<th scope="col">이미지 서클</th>
-								<th scope="col">셀사이즈</th>
-								<th scope="col">프레임</th>
-								<th scope="col">인터페이스</th>
-								<th scope="col">마운트</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td><label class="inputChk"><input type="checkbox"> <span>STC-CMB2MCL</span></label></td>
-								<td>CMV2000</td>
-								<td>CMOS</td>
-								<td>Mono</td>
-								<td>2.2</td>
-								<td>2048 x 1088</td>
-								<td>-</td>
-								<td>5.5 x 5.5</td>
-								<td>340</td>
-								<td>CAMERALINK</td>
-								<td>C</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-
 			</section>
 
 		</div>

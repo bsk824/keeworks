@@ -5,13 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="resource/font/ng.css">
-	<link rel="stylesheet" type="text/css" href="resource/css/common.css">
-	<link rel="stylesheet" type="text/css" href="resource/css/style.css">
-	<script type="text/javascript" src="resource/js/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="resource/js/ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="/resource/font/style.css">
+	<link rel="stylesheet" type="text/css" href="/resource/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/resource/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/resource/css/resp.css" media="screen and (max-width: 1070px)">
+	<script type="text/javascript" src="/resource/js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="/resource/js/swiper.min.js"></script>
+	<script type="text/javascript" src="/resource/js/ui.js"></script>
 	<!--[if lt IE 9]>
-		<script src="resource/js/html5shiv.min.js"></script>
+		<script src="/resource/js/html5shiv.min.js"></script>
 	<![endif]-->
 </head>
 <body>
@@ -19,15 +21,357 @@
 	<div id="wrap">
 		
 		<!-- header -->
-		<header id="header">
-
+		<header id="header" onmouseleave="subClose()">
+			<div class="headTop">
+				<h1 class="logo"><a href="#"><img src="/resource/images/logo.png" alt="keeworks"></a></h1>
+				<button type="button" class="btnMenu" onclick="menu()"><span>메뉴</span></button>
+			</div>
+			<nav id="gnb">
+				<div class="search">
+					<fieldset class="inputSearch">
+						<legend>검색어 입력</legend>
+						<button type="button" class="btnSearchClose" onclick="search(this, 'close');">닫기</button>
+						<input type="text" class="inputTxt" placeholder="검색어를 입력하세요.">
+						<button type="button" class="btnSearch">Search</button>
+					</fieldset>
+					<button type="button" class="btnSearch" onclick="search(this, 'open');">Search</button>
+				</div>
+				<ul class="menu">
+					<li><a href="#" onmouseenter="subOpen(this);">ABOUT</a>
+						<div class="subMenu">
+							<strong class="cate">ABOUT</strong>
+							<ul class="list menu3">
+								<li><a href="#">파트너</a></li>
+								<li><a href="#">비전</a></li>
+								<li><a href="#">조직도</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" onmouseenter="subOpen(this);">SOLUTION</a>
+						<div class="subMenu">
+							<strong class="cate">SOLUTION</strong>
+							<ul class="list menu4">
+								<li><a href="#">KEY DESIGN</a></li>
+								<li><a href="#">광학 계산기</a></li>
+								<li><a href="#">C-mount 계산기</a></li>
+								<li><a href="#">광학 시스템 설계 엔진</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" onmouseenter="subOpen(this);">제품</a>
+						<div class="subMenu menuProd">
+							<strong class="cate">제품</strong>
+							<ul class="list menu4">
+								<li>
+									<strong>카메라</strong>
+									<ul class="subList">
+										<li><a href="#">Area</a></li>
+										<li><a href="#">Line scan</a></li>
+										<li><a href="#">Smart</a></li>
+									</ul>
+								</li>
+								<li>
+									<strong>렌즈</strong>
+									<ul class="subList">
+										<li><a href="#">C-mount</a></li>
+										<li><a href="#">F-mount</a></li>
+										<li><a href="#">Large format</a></li>
+										<li><a href="#">Telecentric</a></li>
+									</ul>
+								</li>
+								<li>
+									<strong>조명</strong>
+									<ul class="subList">
+										<li><a href="#">Area light</a></li>
+										<li><a href="#">Line light</a></li>
+										<li><a href="#">Effilux</a></li>
+									</ul>
+									<strong>보드</strong>
+									<ul class="subList">
+										<li><a href="#">CXP</a></li>
+										<li><a href="#">CL</a></li>
+										<li><a href="#">Analog</a></li>
+										<li><a href="#">GigE</a></li>
+									</ul>
+								</li>
+								<li>
+									<strong>라이브러리</strong>
+									<ul class="subList">
+										<li><a href="#">Matrox</a></li>
+									</ul>
+									<strong>3D</strong>
+									<ul class="subList">
+										<li><a href="#">Automation technology</a></li>
+										<li><a href="#">IFM</a></li>
+										<li><a href="#">Laon</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" onmouseenter="subOpen(this);">다운로드</a>
+						<div class="subMenu">
+							<strong class="cate">다운로드</strong>
+							<ul class="list menu4">
+								<li><a href="#">SDK</a></li>
+								<li><a href="#">제품브로셔</a></li>
+								<li><a href="#">샘플소스</a></li>
+								<li><a href="#">기타</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" onmouseenter="subOpen(this);">고객지원</a>
+						<div class="subMenu">
+							<strong class="cate">고객지원</strong>
+							<ul class="list menu5">
+								<li><a href="#">뉴스레터</a></li>
+								<li><a href="#">견적&amp;제품문의</a></li>
+								<li><a href="#">기술문의</a></li>
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">원격지원</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
 		</header>
 		<!-- //header -->
+
 		<!-- container -->
 		<div id="container">
-			
+
+			<div class="mainSlide">
+
+				<div class="slide">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide" style="background-image:url('/resource/images/main/img_slide1.jpg');"></li>
+						<li class="swiper-slide" style="background-image:url('/resource/images/main/img_slide1.jpg');"></li>
+					</ul>
+				</div>
+				<div class="slideControl">
+					<span class="slidePage">
+					</span>
+					<button type="button" class="btnStop" onclick="slideControll(this, 'stop');">자동 슬라이드 정지</button>
+					<button type="button" class="btnStart" onclick="slideControll(this, 'start');">자동 슬라이드 시작</button>
+				</div>
+				<div class="slideNav">
+					<span class="slideNext"></span>
+					<span class="slidePrev"></span>
+				</div>
+
+			</div>
+			<script>mainSlide();</script>
+
+			<section class="section">
+
+				<div class="itemsSlide">
+					<div class="slide">
+						<div class="swiper-wrapper">
+
+							<div class="swiper-slide">
+								<ul class="itemList">
+									<li>
+										<a href="#" style="background-image:url('/resource/images/main/img_item1_1.jpg');">
+											<span class="cont">
+												<span class="sortA">NEW</span>
+												<strong class="tit">VT-16K5X-H140</strong>
+												<span class="info">16384x256 / 140kHz / M95 CoaxPress / 5.0um</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" style="background-image:url('/resource/images/main/img_item1_2.jpg');">
+											<span class="cont">
+												<span class="sortB">고해상도</span>
+												<strong class="tit">VT-3K7C-E100</strong>
+												<span class="info">3200x32 / 100kHz / M42 / Camera Link / 7.0um</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" style="background-image:url('/resource/images/main/img_item1_3.jpg');">
+											<span class="cont">
+												<span class="sortC">고속처리</span>
+												<strong class="tit">MV-CL020-41GC</strong>
+												<span class="info">2K Line Scan, CMOS, GigE Camera</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" style="background-image:url('/resource/images/main/img_item1_4.jpg');">
+											<span class="cont">
+												<span class="sortD">정밀노출</span>
+												<strong class="tit">MV-CL020-41GC</strong>
+												<span class="info">2K Line Scan, CMOS, GigE Camera</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" style="background-image:url('/resource/images/main/img_item1_5.jpg');">
+											<span class="cont">
+												<span class="sortB">고해상도</span>
+												<strong class="tit">VT-3K7C-E100</strong>
+												<span class="info">3200x32 / 100kHz / M42 / Camera Link / 7.0um</span>
+											</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="swiper-slide">
+								<ul class="itemList">
+									<li>
+										<a href="#" style="background-image:url('/resource/images/main/img_item1_1.jpg');">
+											<span class="cont">
+												<span class="sortA">NEW</span>
+												<strong class="tit">VT-16K5X-H140</strong>
+												<span class="info">16384x256 / 140kHz / M95 CoaxPress / 5.0um</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" style="background-image:url('/resource/images/main/img_item1_2.jpg');">
+											<span class="cont">
+												<span class="sortB">고해상도</span>
+												<strong class="tit">VT-3K7C-E100</strong>
+												<span class="info">3200x32 / 100kHz / M42 / Camera Link / 7.0um</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" style="background-image:url('/resource/images/main/img_item1_3.jpg');">
+											<span class="cont">
+												<span class="sortC">고속처리</span>
+												<strong class="tit">MV-CL020-41GC</strong>
+												<span class="info">2K Line Scan, CMOS, GigE Camera</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" style="background-image:url('/resource/images/main/img_item1_4.jpg');">
+											<span class="cont">
+												<span class="sortD">정밀노출</span>
+												<strong class="tit">MV-CL020-41GC</strong>
+												<span class="info">2K Line Scan, CMOS, GigE Camera</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" style="background-image:url('/resource/images/main/img_item1_5.jpg');">
+											<span class="cont">
+												<span class="sortB">고해상도</span>
+												<strong class="tit">VT-3K7C-E100</strong>
+												<span class="info">3200x32 / 100kHz / M42 / Camera Link / 7.0um</span>
+											</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+					
+					<div class="slidePage">
+					</div>
+				</div>
+				<script>itemsSlide();</script>
+				
+				<div class="prodSearch">
+					<h3 class="tit">PRODUCT SEARCH</h3>
+					<div class="btn">
+						<button type="button">카메라</button>
+						<button type="button">렌즈</button>
+						<button type="button">조명</button>
+						<button type="button">보드</button>
+						<button type="button">라이브러리</button>
+						<button type="button">3D</button>
+					</div>
+				</div>
+				<ul class="mainCont">
+					<li>
+						<div class="box">
+							<img src="/resource/images/main/img_main_list1.jpg" alt="">
+							<div class="cont">
+								<b class="tit">견적 &amp; 제품문의</b>
+								<span class="txt">견적문의나 제품관련을 문의하세요.</span>
+								<span class="phone">031-347-7230</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="box">
+							<img src="/resource/images/main/img_main_list2.jpg" alt="">
+							<div class="cont">
+								<b class="tit">기술문의</b>
+								<span class="txt">견적문의나 제품관련을 문의하세요.</span>
+								<span class="phone">031-347-7230</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="box">
+							<img src="/resource/images/main/img_main_list3.jpg" alt="">
+							<div class="cont">
+								<b class="tit">원격기술지원</b>
+								<span class="txt">컴퓨터를 원격으로 연결하여 문제를 해결합니다.</span>
+								<a href="#" class="btnDownload">원격프로그램다운로드</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="box">
+							<img src="/resource/images/main/img_main_list4.jpg" alt="">
+							<div class="cont">
+								<b class="tit">다운로드</b>
+								<span class="txt">MACHINE VISION 관련 자료를 받으실 수 있습니다.</span>
+								<a href="#" class="link">바로가기</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="box">
+							<img src="/resource/images/main/img_main_list5.jpg" alt="">
+							<div class="cont">
+								<b class="tit">글로벌파트너</b>
+								<span class="txt">KEEWORKS와 함께하는 글로벌파트너사를 확인하실 수 있습니다.</span>
+								<a href="#" class="link">바로가기</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="box">
+							<img src="/resource/images/main/img_main_list6.jpg" alt="">
+							<div class="cont">
+								<b class="tit">공지사항</b>
+								<b class="sub">뷰웍스 머신비전카메라 공식대리점 계약</b>
+								<span class="txt">2018년 1월1일 부로 뷰웍스 머신비전카메라 공식대리점으로 계약 완료하였습니다.</span>
+								<a href="#" class="link">자세히보기</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</section>
 		</div>
 		<!-- //container -->
+
+		<!-- footer -->
+		<footer id="footer">
+			<span class="corpLink">
+				<a href="#"><img src="/resource/images/icon_foot_logo1.gif" alt=""></a>
+				<a href="#"><img src="/resource/images/icon_foot_logo2.gif" alt=""></a>
+				<a href="#"><img src="/resource/images/icon_foot_logo3.gif" alt=""></a>
+				<a href="#"><img src="/resource/images/icon_foot_logo4.gif" alt=""></a>
+				<a href="#"><img src="/resource/images/icon_foot_logo5.gif" alt=""></a>
+			</span>
+			<p class="footInfo">
+				<span>경기도 안양시 만안구 일직로94번길 3, 7층 A동(석수동)</span>
+				<span>TEL. 031-347-7230~2</span>
+				<span>FAX. 031-347-7233</span><br>
+				<span>EMAIL : sales@keeworks.com</span>
+				<small class="copy">Copyright © 2015 Keeworks. All Rights Reserved.</small>
+			</p>
+		</footer>
+		<!-- //footer -->
 	</div>
 
 </body>

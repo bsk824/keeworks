@@ -74,6 +74,32 @@ function subClose() {
 	openMenu.removeClass('open').find('.subMenu').slideUp(300);
 }
 
+function tabActive(obj, idx, type) {
+	if(typeof obj !== 'string') {
+		var $this = $(obj);
+		var idx = $this.parent().index();
+		var txt = $this.text();
+		var tabContents = $this.closest('.tabMenu').next('.tabContents');
+
+		if(type === true && !$this.parent().hasClass('active')) event.preventDefault();
+
+		$this.parent().addClass('active').siblings().removeClass('active');
+		
+		if($this.closest('.tabMenu').find('.tabBtn').is(':visible')) {
+			$this.parent().parent().slideUp(200).closest('.tabMenu').find('.tabBtn').text(txt);
+		}
+	} else {
+		var tab = $('#' + obj);
+		var menu = tab.find('li');
+		var tabContents = tab.next('.tabContents');
+		
+		idx = idx - 1;
+
+		menu.eq(idx).addClass('active').siblings().removeClass('active');
+	}
+	tabContents.find('.tabCont').eq(idx).addClass('active').siblings().removeClass('active');
+}
+
 var slideObj = {};
 function mainSlide() {
 	var obj = 'mainSlide';
