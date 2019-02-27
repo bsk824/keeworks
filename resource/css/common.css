@@ -330,6 +330,19 @@ select {
 .listHead .btn {
 	float: right;
 }
+.listFoot {margin: 10px 0 0;}
+.listFoot:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.listFoot .pagination {
+	float: left;
+	margin: 0;
+}
+.listFoot .leftBtn {float: left;}
+.listFoot .rightBtn {float: right;}
+
 .tableList {border-top: 2px solid #33509c;}
 .tableList th, 
 .tableList td {
