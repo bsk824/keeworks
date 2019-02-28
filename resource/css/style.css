@@ -333,3 +333,60 @@
 	width: 130px;
 	margin-left: 10px;
 }
+
+.prodDetail {
+	padding: 25px 0 0;
+	border-top: 1px solid #c6c6c6;
+}
+.prodDetail .prodName {
+	font-size: 36px;
+	line-height: 1.2;
+	color: #486ac2;
+}
+
+.detailHead {
+	position: relative;
+	min-height: 240px;
+	margin: 30px 0 50px;
+	padding-left: 535px;
+}
+.detailHead .prodImg {
+	position: absolute;
+	top: 0; left: 0;
+	width: 503px; height: 238px;
+	border: 1px solid #e6e6e6;
+}
+
+.downloadTable {border-top: 2px solid #33509c;}
+.downloadTable td {
+	padding: 15px 0;
+	border-bottom: 1px solid #c6c6c6;
+	text-align: center;
+	font-size: 13px;
+}
+.downloadTable .sort {
+	display: inline-block;
+	padding: 0 10px;
+	line-height: 22px;
+	border: 1px solid #e6e6e6;
+	border-radius: 22px;
+}
+.downloadTable .name {
+	text-align: left;
+	font-weight: 500;
+	color: #33509c;
+}
+.downloadTable .btnDown {
+	padding-left: 26px;
+	background: url('/resource/images/btn_download2.png') no-repeat;
+}
+.downloadTable tr:hover td {background: #486ac2;}
+.downloadTable tr:hover .sort {
+	color: #fff;
+	border-color: #bccbf0;
+}
+.downloadTable tr:hover .name {color: #fff;}
+.downloadTable tr:hover .btnDown {
+	color: #fff;
+	background: url('/resource/images/btn_download2_w.png') no-repeat;
+}

@@ -79,13 +79,13 @@ function tabActive(obj, idx, type) {
 		var $this = $(obj);
 		var idx = $this.parent().index();
 		var txt = $this.text();
-		var tabContents = $this.closest('.tabMenu').next('.tabContents');
+		var tabContents = $this.closest('[class*="tabMenu"]').next('.tabContents');
 
 		if(type === true && !$this.parent().hasClass('active')) event.preventDefault();
 
 		$this.parent().addClass('active').siblings().removeClass('active');
 		
-		if($this.closest('.tabMenu').find('.tabBtn').is(':visible')) {
+		if($this.closest('[class*="tabMenu"]').find('.tabBtn').is(':visible')) {
 			$this.parent().parent().slideUp(200).closest('.tabMenu').find('.tabBtn').text(txt);
 		}
 	} else {
@@ -97,7 +97,8 @@ function tabActive(obj, idx, type) {
 
 		menu.eq(idx).addClass('active').siblings().removeClass('active');
 	}
-	tabContents.find('.tabCont').eq(idx).addClass('active').siblings().removeClass('active');
+	
+	tabContents.find('> .tabCont').eq(idx).addClass('active').siblings().removeClass('active');
 }
 
 var slideObj = {};

@@ -297,9 +297,7 @@ select {
 	display: block;
 	clear: both;
 }
-.tabMenu li {
-	float: left;
-}
+.tabMenu li {float: left;}
 .tabMenu li button,
 .tabMenu li a {
 	display: block;
@@ -315,6 +313,78 @@ select {
 	background: #33509c;
 	color: #fff;
 }
+
+.tabMenu2 {margin: 0 0 20px;}
+.tabMenu2 ul {margin: 0 -1px;}
+.tabMenu2 ul:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.tabMenu2 li {float: left;}
+.tabMenu2 li button,
+.tabMenu2 li a {
+	display: block;
+	width: 128px;
+	line-height: 38px;
+	margin: 0 1px;
+	border: 1px solid #e6e6e6;
+	color: #666;
+	font-size: 16px;
+}
+.tabMenu2 li.active button,
+.tabMenu2 li.active a {
+	background: #33509c;
+	border-color: #33509c;
+	color: #fff;
+}
+
+.tabMenu3 {margin: 0 0 25px;}
+.tabMenu3 ul {padding: 0 1px;}
+.tabMenu3 ul:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.tabMenu3 li {float: left;}
+.tabMenu3 .tabItem2 li {width: 50%;}
+.tabMenu3 li span {
+	display: block;
+	margin: 0 -1px;
+	background: #fff;
+	border: 1px solid #e6e6e6;
+	color: #666;
+}
+.tabMenu3 li button,
+.tabMenu3 li a {
+	display: block;
+	width: 100%;
+	line-height: 48px;
+	font-size: 16px;
+}
+.tabMenu3 li.active {position: relative;}
+.tabMenu3 li.active span {
+	border-color: #bcc2d0;
+	color: #333;
+	font-weight: bold;
+}
+.tabMenu3 li.active:before {
+	content: "";
+	position: absolute;
+	bottom: -6px; left: 50%;
+	margin-left: -3px;
+	border: 6px solid transparent;
+	border-top: 6px solid #486ac2;
+	border-bottom: 0;
+}
+.tabMenu3 li.active:after {
+	content: "";
+	position: absolute;
+	bottom: 0; right: -1px; left: -1px;
+	height: 3px;
+	background: #486ac2;
+}
+
 .tabContents .tabCont {display: none;}
 .tabContents .tabCont.active {display: block;}
 
@@ -342,6 +412,37 @@ select {
 }
 .listFoot .leftBtn {float: left;}
 .listFoot .rightBtn {float: right;}
+
+.tableTip {
+	margin: 10px 0 0;
+	font-size: 13px;
+}
+
+.tableType1 {
+	border-top:2px solid #33509c;
+}
+.tableType1 th,
+.tableType1 td {
+	border-bottom: 1px solid #c6c6c6;
+	text-align: left;
+	font-size: 13px;
+}
+.tableType1 th {
+	position: relative;
+	padding: 0 0 0 30px;
+	color: #33509c;
+}
+.tableType1 th:after {
+	content: "";
+	position: absolute;
+	top: 50%; right: 0;
+	height: 12px;
+	margin-top: -6px;
+	border-right: 1px solid #486ac2;
+}
+.tableType1 td {
+	padding: 14px 20px 13px;
+}
 
 .tableList {border-top: 2px solid #33509c;}
 .tableList th, 
