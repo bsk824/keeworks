@@ -117,7 +117,7 @@
 		top: 0; right: 0;
 		width: 5.6rem;
 		height: 100%;
-		background: url(/resource/images/btn_search_mo.png) no-repeat 50%;
+		background: url(/keeworks/resource/images/btn_search_mo.png) no-repeat 50%;
 		background-size: 2.6rem;
 		font: 0/0 a;
 	}
@@ -142,7 +142,7 @@
 		border-bottom: 1px solid #b3b3b3;
 	}
 	#gnb .menu > li.open > a {
-		background: url(/resource/images/bg_submenu_arrow.png) no-repeat right 1.5rem top 50%;
+		background: url(/keeworks/resource/images/bg_submenu_arrow.png) no-repeat right 1.5rem top 50%;
 	}
 	#gnb .menu > li > a {
 		padding: 0 1.5rem;
@@ -569,7 +569,7 @@
 	.downloadTable tr:hover .name {color: #33509c;}
 	.downloadTable tr:hover .btnDown {
 		color: #666;
-		background-image: url('/resource/images/btn_download2.png');
+		background-image: url('/keeworks/resource/images/btn_download2.png');
 		background-size: 1.7rem;
 	}
 }

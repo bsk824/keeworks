@@ -30,7 +30,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav
 }
 select {
 	-webkit-appearance: none;
-	background:#fff url('/resource/images/bg_select.gif') no-repeat 100% 50%;
+	background:#fff url('/keeworks/resource/images/bg_select.gif') no-repeat 100% 50%;
 }
 textarea {
 	padding: 10px;
@@ -49,7 +49,7 @@ textarea {
 	border: 1px solid #d0d0d0;
 	width: 15px; height: 15px;
 	margin: 0 5px 0 0;
-	background-image: url('/resource/images/bg_radio.png');
+	background-image: url('/keeworks/resource/images/bg_radio.png');
 	background-repeat: no-repeat;
 	border-radius: 50%;
 	vertical-align: middle;
@@ -140,7 +140,7 @@ textarea {
 #header .search .btnSearch {
 	height: 23px;
 	padding-left: 27px;
-	background: url(/resource/images/btn_search.png) no-repeat;
+	background: url(/keeworks/resource/images/btn_search.png) no-repeat;
 	color: #1b3780;
 	font-weight: 400;
 }
@@ -161,7 +161,7 @@ textarea {
 }
 #header .search .inputSearch .btnSearchClose {
 	width: 20px; height: 20px;
-	background: url(/resource/images/btn_search_close.png) no-repeat;
+	background: url(/keeworks/resource/images/btn_search_close.png) no-repeat;
 	font: 0/0 a;
 	vertical-align: 6px;
 }
@@ -344,7 +344,7 @@ textarea {
 #snb .list .active {color: #486ac2;}
 #snb .list .active a {
 	padding-left: 13px;
-	background: url('/resource/images/bg_snb_arrow.png') no-repeat 0 50%;
+	background: url('/keeworks/resource/images/bg_snb_arrow.png') no-repeat 0 50%;
 }
 
 #contents {margin-left: 270px;}
@@ -368,7 +368,7 @@ textarea {
 	display: inline-block;
 	width: 16px; height: 16px;
 	margin: 0 5px 0 0;
-	background: url('/resource/images/btn_search_mo.png') no-repeat;
+	background: url('/keeworks/resource/images/btn_search_mo.png') no-repeat;
 	background-size: cover;
 	vertical-align: -3px;
 }
@@ -544,7 +544,7 @@ a[class*="btnType"] {line-height: 36px;}
 }
 .listHead .listSearch .btnSearch {
 	width: 34px; height: 34px;
-	background: url('/resource/images/btn_search2.png') no-repeat 50%;
+	background: url('/keeworks/resource/images/btn_search2.png') no-repeat 50%;
 	background-size: 16px;
 	font-size: 0;
 	vertical-align: middle;
@@ -649,7 +649,7 @@ a[class*="btnType"] {line-height: 36px;}
 	position: absolute;
 	top: 2px; right: 0;
 	width: 18px; height: 18px;
-	background: url('/resource/images/icon_new.png') no-repeat;
+	background: url('/keeworks/resource/images/icon_new.png') no-repeat;
 	font-size: 0;
 
 }
@@ -661,7 +661,7 @@ a[class*="btnType"] {line-height: 36px;}
 .tableList .noti .ico {
 	display: inline-block;
 	width: 20px; height: 18px;
-	background: url('/resource/images/icon_noti.png') no-repeat;
+	background: url('/keeworks/resource/images/icon_noti.png') no-repeat;
 	font-size: 0;
 	vertical-align: middle;
 }
@@ -808,10 +808,10 @@ a[class*="btnType"] {line-height: 36px;}
 	margin: 0 7px;
 }
 .pagination [class*="pageNav"] {font-size: 0;}
-.pagination .pageNavStart {background: url('/resource/images/btn_page_start.gif') no-repeat 50%;}
-.pagination .pageNavPrev {background: url('/resource/images/btn_page_prev.gif') no-repeat 50%;}
-.pagination .pageNavNext {background: url('/resource/images/btn_page_next.gif') no-repeat 50%;}
-.pagination .pageNavEnd {background: url('/resource/images/btn_page_end.gif') no-repeat 50%;}
+.pagination .pageNavStart {background: url('/keeworks/resource/images/btn_page_start.gif') no-repeat 50%;}
+.pagination .pageNavPrev {background: url('/keeworks/resource/images/btn_page_prev.gif') no-repeat 50%;}
+.pagination .pageNavNext {background: url('/keeworks/resource/images/btn_page_next.gif') no-repeat 50%;}
+.pagination .pageNavEnd {background: url('/keeworks/resource/images/btn_page_end.gif') no-repeat 50%;}
 
 .thumbList {
 	margin: -15px -15px 0;

@@ -4,14 +4,14 @@
 	position: absolute;
 	top: 0; bottom: 0; left: 0;
 	right: 50%;
-	background: url('/resource/images/intro/img_intro1.jpg') no-repeat 50%;
+	background: url('/keeworks/resource/images/intro/img_intro1.jpg') no-repeat 50%;
 	background-size: cover;
 }
 .intro2 {
 	position: absolute;
 	top: 0; bottom: 0; right: 0;
 	left: 50%;
-	background: url('/resource/images/intro/img_intro2.jpg') no-repeat 50%;
+	background: url('/keeworks/resource/images/intro/img_intro2.jpg') no-repeat 50%;
 	background-size: cover;
 }
 .intro1 a, .intro2 a {
@@ -28,7 +28,7 @@
 	padding: 15px 125px 35px 100px;
 	font-size: 16px;
 	color: #fff;
-	background: url('/resource/images/btn_intro_link.png') no-repeat 100% 50%;
+	background: url('/keeworks/resource/images/btn_intro_link.png') no-repeat 100% 50%;
 }
 .intro1 strong, .intro2 strong {
 	display: inline-block;
@@ -268,7 +268,7 @@
 	display: inline-block;
 	width: 10px; height: 12px;
 	margin-left: 5px;
-	background: url('/resource/images/btn_download.png') no-repeat;
+	background: url('/keeworks/resource/images/btn_download.png') no-repeat;
 }
 .mainCont .link {
 	position: absolute;
@@ -281,7 +281,7 @@
 	display: inline-block;
 	width: 7px; height: 11px;
 	margin-left: 5px;
-	background: url('/resource/images/main/icon_link.png') no-repeat;
+	background: url('/keeworks/resource/images/main/icon_link.png') no-repeat;
 }
 .mainCont .sub {
 	display: block;
@@ -434,7 +434,7 @@
 }
 .downloadTable .btnDown {
 	padding-left: 26px;
-	background: url('/resource/images/btn_download2.png') no-repeat;
+	background: url('/keeworks/resource/images/btn_download2.png') no-repeat;
 }
 .downloadTable tr:hover td {background: #486ac2;}
 .downloadTable tr:hover .size,
@@ -445,13 +445,13 @@
 .downloadTable tr:hover .name {color: #fff;}
 .downloadTable tr:hover .btnDown {
 	color: #fff;
-	background: url('/resource/images/btn_download2_w.png') no-repeat;
+	background: url('/keeworks/resource/images/btn_download2_w.png') no-repeat;
 }
 
 .newsletterTop {
 	height: 310px;
 	padding-right: 40px;
-	background: url('/resource/images/contents/bg_newsletter.jpg') no-repeat;
+	background: url('/keeworks/resource/images/contents/bg_newsletter.jpg') no-repeat;
 	color: #fff;
 	text-align: right;
 }
