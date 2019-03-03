@@ -250,6 +250,13 @@
 	}
 	a[class*="btnType"] {line-height: 3rem;}
 
+	.tabMenu li button,
+	.tabMenu li a {
+		width: 14rem;
+		line-height: 3rem;
+		margin: 0 .3rem;
+	}
+
 	.tabMenu2 {margin: 0 0 1rem;}
 	.tabMenu2 ul {margin: 0 -.1rem;}
 	.tabMenu2 li button,
@@ -261,7 +268,6 @@
 	}
 
 	.tabMenu3 {margin: 0 0 1.5rem;}
-	.tabMenu3 ul {padding: 0 0 0 .1rem;}
 	.tabMenu3 li span {margin: 0 0 0 -.1rem;}
 	.tabMenu3 li button,
 	.tabMenu3 li a {
@@ -304,6 +310,172 @@
 		min-height: 2rem;
 		font-size: 1.3rem;
 	}
+
+	.listHead {margin: 0 0 1rem;}
+	.listHead .listSort {
+		float: none;
+		display: block;
+		width: auto;
+		padding-right: 5.5rem;
+	}
+	.listHead .listSort .btnType1 {
+		line-height: 3.4rem;
+	}
+	.listHead .listSearch {
+		position: relative;
+		display: block;
+		float: none;
+		margin: .5rem 0 0;
+	}
+	.listHead .listSearch .inputTxt {
+		width: 100%;
+		padding-right: 5rem;
+	}
+	.listHead .listSearch .btnSearch {
+		position: absolute;
+		top: 0; right: 0;
+		width: 3.6rem; height: 3.6rem;
+	}
+
+	.tableTip {
+		margin: 1rem 0 0;
+		font-size: 1.3rem;
+	}
+	.tableTip2 {
+		margin: 0 0 1rem;
+		font-size: 1.3rem;
+	}
+	.inputTable  .tip {
+		display: block;
+		margin: .5rem 0 0;
+	}
+	.inputTable colgroup {display: none;}
+	.inputTable table, .inputTable tbody, .inputTable tr, .inputTable th, .inputTable td {
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	.inputTable th {
+		border: 0;
+		padding: 1rem 1rem .5rem;
+		vertical-align: top;
+	}
+	.inputTable th:after {display: none;}
+	.inputTable td {
+		height: auto;
+		padding: 0 1rem 1rem;
+	}
+	.tableList table {table-layout:auto;}
+	.tableList th, 
+	.tableList td {
+		padding: 1rem;
+		font-size: 1.2rem;
+	}
+	
+	.tableList .noti .ico {
+		width: 1.6rem; height: 1.4rem;
+		background-size: cover;
+	}
+	.tableList img {max-width: 100%;}
+	.typeMo thead {display: none;}
+	.typeMo table, .typeMo tbody, .typeMo tr {display: block;}
+	.typeMo[class*="table"] .center * {text-align: left;}
+	.typeMo tr {
+		position: relative;
+		padding: .5rem 0;
+		border-bottom: 1px solid #e6e6e6;
+	}
+	.typeMo table td {
+		display: inline-block;
+		margin-right: 1rem;
+		padding: 0 1rem;
+		border: 0;
+		font-size: 1.4rem;
+	}
+	.typeMo td.sub {
+		display: block;
+		padding: .5rem 1rem;
+	}
+	.typeMo td.sub a {
+		position: static;
+		padding: 0;
+		line-height: 1.2;
+		white-space: normal;
+		text-overflow: unset;
+	}
+	.typeMo td.sub a .new {
+		top: 1rem; right: 1rem;
+	}
+	.bbsView .viewHead {
+		display: block;
+		width: auto;
+		padding: 1rem;
+	}
+	.viewHead > * {
+		display: inline-block;
+		height: auto;
+	}
+	.bbsView .sort {
+		width: auto;
+		margin: 0 0 1rem;
+		text-align: left;
+		font-size: 1.4rem;
+	}
+	.bbsView .sort:after {display: none;}
+	.bbsView .tit {
+		display: block;
+		padding: 0;
+		margin: 0 0 1rem;
+		font-size: 1.6rem;
+	}
+	.bbsView .viewCont {
+		padding: 1rem 1rem 2rem;
+	}
+	.bbsView .viewCont .answer {
+		margin: 2rem 0 0;
+		padding: 2rem 0 0;
+	}
+
+	.bbsView .viewNav p {
+		padding: 1rem 1rem 1rem 9rem;
+		height: 4rem;
+		font-size: 1.3rem;
+	}
+	.bbsView .viewNav b {
+		width: 8rem;
+		line-height: 4rem;
+	}
+
+	.pagination {
+		margin: 1rem 0 0;
+		text-align: center;
+	}
+	.pagination .num {margin: 0;}
+	.pagination a, .pagination strong {
+		width: 2rem; height: 2rem;
+		line-height: 2rem;
+		margin:0 .1rem;
+		font-size: 1.2rem;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.thumbList {margin: -10px -10px 0;}
+	.thumbList li {width: 33.33%;}
+	.thumbList .box {margin: 10px;}
+}
+@media screen and (max-width: 767px) {
+	.thumbList {margin: -.5rem -.5rem 0;}
+	.thumbList li {width: 50%;}
+	.thumbList .box {margin: .5rem;}
+	.thumbList .cont {
+		height: 9rem;
+		padding: 1rem;
+	}
+	.thumbList .tit {
+		font-size: 1.4rem;
+		height: 6rem;
+	}
+	.thumbList .source {font-size: 1.3rem;}
 }
 
 .mainSlide .swiper-slide {height: 500px;}
@@ -398,38 +570,6 @@
 	}
 	.mainCont .noti .txt {
 		-webkit-line-clamp: 2;
-	}
-}
-@media screen and (max-width: 1024px) {
-	.thumbList {margin: -10px -10px 0;}
-	.thumbList li {width: 33.33%;}
-	.thumbList .box {margin: 10px;}
-}
-@media screen and (max-width: 767px) {
-	.thumbList {margin: -.5rem -.5rem 0;}
-	.thumbList li {width: 50%;}
-	.thumbList .box {margin: .5rem;}
-	.thumbList .cont {
-		height: 11rem;
-		padding: 1rem;
-	}
-	.thumbList .tit {
-		font-size: 1.6rem;
-		height: 7rem;
-	}
-	.thumbList .source {font-size: 1.3rem;}
-}
-@media screen and (max-width: 767px) {
-	.pagination {
-		margin: 1rem 0 0;
-		text-align: center;
-	}
-	.pagination .num {margin: 0;}
-	.pagination a, .pagination strong {
-		width: 2rem; height: 2rem;
-		line-height: 2rem;
-		margin:0 .1rem;
-		font-size: 1.2rem;
 	}
 }
 @media screen and (max-width: 1024px) {
@@ -551,6 +691,7 @@
 		display: block;
 		margin: .5rem 0;
 	}
+	.downloadTable .name:first-child {padding: 0;}
 	.downloadTable .btnDown {
 		padding-left: 2.6rem;
 		background-size: 1.7rem;
@@ -604,7 +745,7 @@
 		font-size: 2rem;
 	}
 	.newsletterList .txt {
-		height: 9rem;
+		height: 10rem;
 		margin: 0 0 2rem;
 		font-size: 1.5rem;
 	}

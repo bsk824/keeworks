@@ -37,7 +37,10 @@ textarea {
 	box-sizing: border-box;
 	resize: none;
 }
+.inputChk {display: inline-block;}
+.inputChk input {vertical-align: -1px;}
 .inputRadio {
+	display: inline-block;
 	position: relative;
 }
 .inputRadio input {
@@ -454,8 +457,10 @@ a[class*="btnType"] {line-height: 36px;}
 	color: #fff;
 }
 
-.tabMenu3 {margin: 0 0 25px;}
-.tabMenu3 ul {padding: 0 0 0 1px;}
+.tabMenu3 {
+	margin: 0 0 25px;
+	border-left: 1px solid #e6e6e6;
+}
 .tabMenu3 ul:after {
 	content: "";
 	display: block;
@@ -479,6 +484,7 @@ a[class*="btnType"] {line-height: 36px;}
 }
 .tabMenu3 li.active {position: relative;}
 .tabMenu3 li.active span {
+	position: relative;
 	border-color: #bcc2d0;
 	color: #333;
 	font-weight: bold;
@@ -566,6 +572,7 @@ a[class*="btnType"] {line-height: 36px;}
 
 .scrollTable {
 	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
 }
 .tableTip {
 	margin: 10px 0 0;
