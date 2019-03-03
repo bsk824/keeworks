@@ -27,9 +27,9 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav
 	border-radius: 3px;
 	color: #666;
 	box-sizing: border-box;
+	-webkit-appearance: none;
 }
 select {
-	-webkit-appearance: none;
 	background:#fff url('/keeworks/resource/images/bg_select.gif') no-repeat 100% 50%;
 }
 textarea {
