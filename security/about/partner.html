@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="/resource/font/style.css">
+	<link rel="stylesheet" type="text/css" href="/resource/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/resource/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/resource/css/resp.css" media="screen and (max-width: 1070px)">
+	<script type="text/javascript" src="/resource/js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="/resource/js/ui.js"></script>
+	<!--[if lt IE 9]>
+		<script src="/resource/js/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<div id="wrap">
+		
+		<!-- header -->
+		<header id="header" onmouseleave="subClose()">
+			<div class="headTop">
+				<h1 class="logo"><a href="#"><img src="/resource/images/logo.png" alt="keeworks"></a></h1>
+				<button type="button" class="btnMenu" onclick="menu()"><span>메뉴</span></button>
+			</div>
+			<nav id="gnb">
+				<div class="search">
+					<fieldset class="inputSearch">
+						<legend>검색어 입력</legend>
+						<button type="button" class="btnSearchClose" onclick="search(this, 'close');">닫기</button>
+						<input type="text" class="inputTxt" placeholder="검색어를 입력하세요.">
+						<button type="button" class="btnSearch">Search</button>
+					</fieldset>
+					<button type="button" class="btnSearch" onclick="search(this, 'open');">Search</button>
+				</div>
+				<ul class="menu gnbMenu4">
+					<li><a href="#" onmouseenter="subOpen(this);">ABOUT</a>
+						<div class="subMenu">
+							<strong class="cate">ABOUT</strong>
+							<ul class="list menu3">
+								<li><a href="#">파트너</a></li>
+								<li><a href="#">비전</a></li>
+								<li><a href="#">조직도</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" onmouseenter="subOpen(this);">MACHINE VISION</a></li>
+					<li><a href="#" onmouseenter="subOpen(this);">VIDEO SECURITY</a></li>
+					<li><a href="#" onmouseenter="subOpen(this);">CONTACT US</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- //header -->
+
+		<!-- container -->
+		<div id="container">
+
+			<h2 class="pageTitle">파트너</h2>
+			<section class="section">
+				<div class="tabMenu3">
+					<ul class="tabItem2">
+						<li class="active"><button type="button" onclick="tabActive(this);"><span>해외</span></button></li>
+						<li><button type="button" onclick="tabActive(this);"><span>국내</span></button></li>
+					</ul>
+				</div>
+				<div class="tabContents">
+					<div class="tabCont active">
+						
+						<link href="/resource/js/plugin/jqvmap.css" media="screen" rel="stylesheet" type="text/css"/>
+						<script type="text/javascript" src="/resource/js/plugin/jquery.vmap.js"></script>
+						<script type="text/javascript" src="/resource/js/plugin/jquery-jvectormap-world-mill-en.js" charset="utf-8"></script>
+						<script>
+							var scope = {};
+							scope.markerColor = '#cc0000';
+							scope.bgColor = 'transparent';
+							scope.scale = 2;
+							scope.scaleColors = ["#454545","#5e5e5e"];
+							
+							var seriesData = {
+								regions : [
+									{ values : { CA:'#878c9a' } },
+									{ values : { FR:'#878c9a' } },
+									{ values : { AU:'#878c9a' } },
+									{ values : { GB:'#878c9a' } },
+									{ values : { RU:'#878c9a' } },
+									{ values : { BR:'#878c9a' } },
+									{ values : { IN:'#878c9a' } },
+									{ values : { CN:'#878c9a' } },
+									{ values : { US:'#878c9a' } },
+									{ values : { SA:'#878c9a' } },
+									
+								]	    
+							}; 
+							
+							var markersData = 	[
+								{latLng: [55.65, 12.37],	name: 'Milestone System'},
+								{latLng: [34.15, -118.25], name: 'Replay Technologies'},
+								{latLng: [56.45, 13.13], 	name: 'AXIS'},
+								{latLng: [25.09, 121.52], 	name: 'NUUO'},
+								{latLng: [35.62, 139.77], 	name: 'SONY'},
+								{latLng: [55.18, -1.58], 	name: 'RAYTEC'},
+								{latLng: [30.20, 120.22], 	name: 'HIKVISION'},
+							];
+								
+							$(function(){
+								$('#world-map-markers').vectorMap({
+								map: 'world_mill_en',
+								scaleColors: ['#C8EEFF', '#0071A4'],
+								normalizeFunction: 'polynomial',
+								hoverOpacity: 0.7,
+								hoverColor: false,	
+									
+								markerStyle: {
+									initial: {
+									fill: '#666',
+									stroke: '#383f47'
+									}
+								},
+								regionStyle: { initial: { fill: '#bbbec6' } },  //Changed this line
+								series:seriesData,
+								backgroundColor: '#f5f7fa',
+								markers: markersData
+								});
+							});
+						</script>
+						<div id="world-map-markers" style="width:100%; height:468px; margin: 0 0 20px;"></div>
+						
+						<ul class="parterList">
+							<li>
+								<span class="img"><img src="http://www.keeworks.com/res/images/about/partner_ext01.jpg" alt="milestone - The Open Platform Company"></span>
+								<dl>
+									<dt>Milestone System</dt>
+									<dd><a href="https://www.milestonesys.com" target="_blank">https://www.milestonesys.com</a></dd>
+									<dd class="addr">Banemarksvej 50, 2605 Brøndby, Denmark</dd>
+								</dl>
+							</li>
+							<li>
+								<span class="img"><img src="http://www.keeworks.com/res/images/about/partner_ext02.jpg" alt="Arecont Vision - megapixel technology... beyond imagination"></span>
+								<dl>
+									<dt>Arecont Vision</dt>
+									<dd><a href="http://www.arecontvision.com" target="_blank">http://www.arecontvision.com</a></dd>
+									<dd class="addr">425 E. Colorado St., 7th Floor Glendale, CA 91205, USA</dd>
+								</dl>
+							</li>
+							<li>
+								<span class="img"><img src="http://www.keeworks.com/res/images/about/partner_ext03.jpg" alt="freeD - FREE DIMENSIONAL VIDEO"></span>
+								<dl>
+									<dt>Replay Technologies</dt>
+									<dd><a href="http://replay-technologies.com" target="_blank">http://replay-technologies.com</a></dd>
+									<dd class="addr">Habarzel Street Tel Aviv, 69710, Israel</dd>
+								</dl>
+							</li>
+							<li>
+								<span class="img"><img src="http://www.keeworks.com/res/images/about/partner_ext04.jpg" alt="AXIS - COMMUNICATIONS"></span>
+								<dl>
+									<dt>AXIS</dt>
+									<dd><a href="http://www.axis.com" target="_blank">http://www.axis.com</a></dd>
+									<dd class="addr">Emdalavägen 14,223 69 Lund, Sweden</dd>
+								</dl>
+							</li>
+							<li>
+								<span class="img"><img src="http://www.keeworks.com/res/images/about/partner_ext05.jpg" alt="nuuo since 2004 - Trusted Video Management"></span>
+								<dl>
+									<dt>NUUO</dt>
+									<dd><a href="http://www.nuuo.com" target="_blank">http://www.nuuo.com</a></dd>
+									<dd class="addr">231 Taiwan New Taipei City, Xindian District, Section 3, Beixin Rd, 207-1號,B1</dd>
+								</dl>
+							</li>
+							<li>
+								<span class="img"><img src="http://www.keeworks.com/res/images/about/partner_ext06.jpg" alt="SONY"></span>
+								<dl>
+									<dt>SONY</dt>
+									<dd><a href="http://www.sony.com/" target="_blank">http://www.sony.com/</a></dd>
+									<dd class="addr">135-0091 Tokyo, Minato, Daiba, 1 Chome−1−7−1,Aqua City Odaiba, ディアージュ5F</dd>
+								</dl>
+							</li>
+							<li>
+								<span class="img"><img src="http://www.keeworks.com/res/images/about/partner_ext07.jpg" alt="raytec"></span>
+								<dl>
+									<dt>Raytec</dt>
+									<dd><a href="http://www.rayteccctv.com" target="_blank">http://www.rayteccctv.com</a></dd>
+									<dd class="addr">Unit 3 Wansbeck Business Park Rotary Parkway Ashington, Northumberland NE63 8QW, UK</dd>
+								</dl>
+							</li>
+							<li>
+								<span class="img"><img src="http://www.keeworks.com/res/images/about/partner_ext08.jpg" alt="HIKVISION"></span>
+								<dl>
+									<dt>HIKVISION</dt>
+									<dd><!-- <a href="#" target="_blank"></a> --></dd>
+									<dd class="addr">&nbsp;</dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+					<div class="tabCont">
+						<ul class="parterList">
+							<li>
+								<span class="img"><img src="http://www.keeworks.com/res/images/about/partner_ss.jpg" alt="Samsung"></span>
+								<dl>
+									<dt>삼성전자</dt>
+									<dd><a href="http://www.samsung.com" target="_blank">http://www.samsung.com</a></dd>
+								</dl>
+							</li>
+							<li>
+								<span class="img"><img src="http://www.keeworks.com/res/images/about/partner_kt.jpg" alt="KT"></span>
+								<dl>
+									<dt>KT</dt>
+									<dd><a href="http://www.kt.com" target="_blank">http://www.kt.com</a></dd>
+								</dl>
+							</li>
+							<li>
+								<span class="img"><img src="http://www.keeworks.com/res/images/about/partner_int01.jpg" alt="SBS Sports"></span>
+								<dl>
+									<dt>SBS Sports</dt>
+									<dd><a href="http://sbssports.sbs.co.kr" target="_blank">http://sbssports.sbs.co.kr</a></dd>
+								</dl>
+							</li>
+							<li>
+								<span class="img"><img src="http://www.keeworks.com/res/images/about/partner_int02.jpg" alt="SBS"></span>
+								<dl>
+									<dt>SBS</dt>
+									<dd><a href="http://www.sbs.co.kr" target="_blank">http://www.sbs.co.kr</a></dd>
+								</dl>
+							</li>
+							<!--li>
+								<span class="img"><img src="http://www.keeworks.com/res/images/about/partner_int03.jpg" alt="KBN N SPORTS"></span>
+								<dl>
+									<dt>KBN N SPORTS</dt>
+									<dd><a href="http://www.kbsn.co.kr/sports/" target="_blank">http://www.kbsn.co.kr/sports/</a></dd>
+								</dl>
+							</li-->
+							<li>
+								<span class="img"><img src="http://www.keeworks.com/res/images/about/partner_int04.jpg" alt="두산 베어스"></span>
+								<dl>
+									<dt>두산 베어스</dt>
+									<dd><a href="http://www.doosanbears.com" target="_blank">http://www.doosanbears.com</a></dd>
+								</dl>
+							</li>
+							<li>
+								<span class="img"><img src="http://www.keeworks.com/res/images/about/partner_int05.jpg" alt="LG트윈스"></span>
+								<dl>
+									<dt>LG트윈스</dt>
+									<dd><a href="http://www.lgtwins.com" target="_blank">http://www.lgtwins.com</a></dd>
+								</dl>
+							</li>
+							<li>
+								<span class="img"><img src="http://www.keeworks.com/res/images/about/partner_int06.jpg" alt="GOLFZON COUNTY"></span>
+								<dl>
+									<dt>GOLFZON COUNTY</dt>
+									<dd><a href="http://www.golfzoncounty.com" target="_blank">http://www.golfzoncounty.com</a></dd>
+								</dl>
+							</li>
+							<li>
+								<span class="img"><img src="http://www.keeworks.com/res/images/about/partner_int07.jpg" alt="GOLFZON ACADEMY"></span>
+								<dl>
+									<dt>GDR</dt>
+									<dd><a href="http://gdr.golfzon.com" target="_blank">http://gdr.golfzon.com</a></dd>
+								</dl>
+							</li>
+							<li>
+								<span class="img"><img src="http://www.keeworks.com/res/images/about/partner_int08.jpg" alt="GOLFZON"></span>
+								<dl>
+									<dt>GOLFZON</dt>
+									<dd><a href="http://company.golfzon.com" target="_blank">http://company.golfzon.com</a></dd>
+								</dl>
+							</li>
+							<li>
+								<span class="img"><img src="http://www.keeworks.com/res/images/about/adt_caps.jpg" alt="ADT CAPS"></span>
+								<dl>
+									<dt>ADT CAPS</dt>
+									<dd><a href="https://www.adtcaps.co.kr/" target="_blank">https://www.adtcaps.co.kr/</a></dd>
+								</dl>
+							</li>
+							<li>
+								<span class="img"><img src="http://www.keeworks.com/res/images/about/adt_caps_se.jpg" alt="ADT Security"></span>
+								<dl>
+									<dt>ADT Security</dt>
+									<dd><a href="https://www.adtsecurity.co.kr/" target="_blank">https://www.adtsecurity.co.kr/</a></dd>
+								</dl>
+							</li>
+							<li>
+								<span class="img"><img src="http://www.keeworks.com/res/images/about/nsok.jpg" alt="NSOK"></span>
+								<dl>
+									<dt>NSOK</dt>
+									<dd><a href="https://home.nsok.co.kr/" target="_blank">https://home.nsok.co.kr/</a></dd>
+								</dl>
+							</li>
+							<li>
+								<span class="img"><img src="http://www.keeworks.com/res/images/about/sds.jpg" alt="SDS"></span>
+								<dl>
+									<dt>삼성SDS</dt>
+									<dd><a href="http://www.samsungsds.com" target="_blank">http://www.samsungsds.com</a></dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			
+		</div>
+		<!-- //container -->
+		<!-- footer -->
+		<footer id="footer">
+			<span class="corpLink">
+				<a href="#"><img src="/resource/images/icon_foot_logo1.gif" alt=""></a>
+				<a href="#"><img src="/resource/images/icon_foot_logo2.gif" alt=""></a>
+				<a href="#"><img src="/resource/images/icon_foot_logo3.gif" alt=""></a>
+				<a href="#"><img src="/resource/images/icon_foot_logo4.gif" alt=""></a>
+				<a href="#"><img src="/resource/images/icon_foot_logo5.gif" alt=""></a>
+			</span>
+			<p class="footInfo">
+				<span>경기도 안양시 만안구 일직로94번길 3, 7층 A동(석수동)</span>
+				<span>TEL. 031-347-7230~2</span>
+				<span>FAX. 031-347-7233</span><br>
+				<span>EMAIL : sales@keeworks.com</span>
+				<small class="copy">Copyright © 2015 Keeworks. All Rights Reserved.</small>
+			</p>
+		</footer>
+		<!-- //footer -->
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="/resource/font/style.css">
+	<link rel="stylesheet" type="text/css" href="/resource/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/resource/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/resource/css/resp.css" media="screen and (max-width: 1070px)">
+	<script type="text/javascript" src="/resource/js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="/resource/js/swiper.min.js"></script>
+	<script type="text/javascript" src="/resource/js/ui.js"></script>
+	<!--[if lt IE 9]>
+		<script src="/resource/js/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<div id="wrap">
+		
+		<!-- header -->
+		<header id="header" onmouseleave="subClose()">
+			<div class="headTop">
+				<h1 class="logo"><a href="#"><img src="/resource/images/logo.png" alt="keeworks"></a></h1>
+				<button type="button" class="btnMenu" onclick="menu()"><span>메뉴</span></button>
+			</div>
+			<nav id="gnb">
+				<div class="search">
+					<fieldset class="inputSearch">
+						<legend>검색어 입력</legend>
+						<button type="button" class="btnSearchClose" onclick="search(this, 'close');">닫기</button>
+						<input type="text" class="inputTxt" placeholder="검색어를 입력하세요.">
+						<button type="button" class="btnSearch">Search</button>
+					</fieldset>
+					<button type="button" class="btnSearch" onclick="search(this, 'open');">Search</button>
+				</div>
+				<ul class="menu gnbMenu4">
+					<li><a href="#" onmouseenter="subOpen(this);">ABOUT</a>
+						<div class="subMenu">
+							<strong class="cate">ABOUT</strong>
+							<ul class="list menu2">
+								<li><a href="#">Over View</a></li>
+								<li><a href="#">파트너</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" onmouseenter="subOpen(this);">파트너</a>
+						<div class="subMenu">
+							<strong class="cate">파트너</strong>
+							<ul class="list menu3">
+								<li><a href="#">가치제공</a></li>
+								<li><a href="#">파트너채결정책</a></li>
+								<li><a href="#">파트너등록</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" onmouseenter="subOpen(this);">지식센터</a>
+						<div class="subMenu menu2">
+							<strong class="cate">지식센터</strong>
+							<ul class="list menu3">
+								<li><a href="#">용량 계산기</a></li>
+								<li><a href="#">화각 계산기</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" onmouseenter="subOpen(this);">고객지원</a>
+						<div class="subMenu">
+							<strong class="cate">고객지원</strong>
+							<ul class="list menu5">
+								<li><a href="#">뉴스레터</a></li>
+								<li><a href="#">견적&amp;제품문의</a></li>
+								<li><a href="#">기술문의</a></li>
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">원격지원</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!-- //header -->
+
+		<!-- container -->
+		<div id="container">
+
+			<h2 class="pageTitle">파트너</h2>
+			<section class="section">
+				<div class="tabMenu3">
+					<ul class="tabItem2">
+						<li><a href="#"><span>용량 계산기</span></a></li>
+						<li class="active"><a href="#"><span>화각 계산기</span></a></li>
+					</ul>
+				</div>
+
+				<p class="tableTip2">아래 입력 항목들을 입력하시면, 선택하신 카메라에 따라서, 결과값을 계산해 드립니다.</p>
+
+				<div class="tableType1">
+					<table class="inputTable">
+						<caption>화각 계산 입력</caption>
+						<colgroup>
+							<col style="width:240px;">
+							<col>
+							<col style="width:240px;">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">카메라 해상도</th>
+								<td>
+									<select name="" id="" style="width: 230px;">
+										<option value="">###01</option>
+									</select>
+								</td>
+								<th scope="row">센서 포맷</th>
+								<td>
+									<select name="" id="" style="width: 230px;">
+										<option value="">###01</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">렌즈로부터 피사체까지의거리(m)</th>
+								<td>
+									<input type="text" class="inputTxt" style="width: 230px;">
+								</td>
+								<th scope="row">렌즈로부터 초점거리(m)</th>
+								<td>
+									<input type="text" class="inputTxt" style="width: 230px;">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="listFoot">
+					<span class="rightBtn">
+						<button type="submit" class="btnType1">계산하기</button>
+					</span>
+				</div>
+	
+				<div class="tableList contMg">
+					<table class="center">
+						<caption>해상도 별 결과</caption>
+						<thead>
+							<tr>
+								<th scope="col">해상도 수준</th>
+								<th scope="col">PPM</th>
+								<th scope="col">얼굴사진</th>
+								<th scope="col">번호판 사진</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>25%</td>
+								<td>100</td>
+								<td><img src="/resource/images/contents/sample_img4.jpg" alt=""></td>
+								<td><img src="/resource/images/contents/sample_img8.jpg" alt=""></td>
+							</tr>
+							<tr>
+								<td>50%</td>
+								<td>150</td>
+								<td><img src="/resource/images/contents/sample_img5.jpg" alt=""></td>
+								<td><img src="/resource/images/contents/sample_img9.jpg" alt=""></td>
+							</tr>
+							<tr>
+								<td>75%</td>
+								<td>200</td>
+								<td><img src="/resource/images/contents/sample_img6.jpg" alt=""></td>
+								<td><img src="/resource/images/contents/sample_img10.jpg" alt=""></td>
+							</tr>
+							<tr>
+								<td>100%</td>
+								<td>250</td>
+								<td><img src="/resource/images/contents/sample_img7.jpg" alt=""></td>
+								<td><img src="/resource/images/contents/sample_img11.jpg" alt=""></td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+			</section>
+
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<footer id="footer">
+			<span class="corpLink">
+				<a href="#"><img src="/resource/images/icon_foot_logo1.gif" alt=""></a>
+				<a href="#"><img src="/resource/images/icon_foot_logo2.gif" alt=""></a>
+				<a href="#"><img src="/resource/images/icon_foot_logo3.gif" alt=""></a>
+				<a href="#"><img src="/resource/images/icon_foot_logo4.gif" alt=""></a>
+				<a href="#"><img src="/resource/images/icon_foot_logo5.gif" alt=""></a>
+			</span>
+			<p class="footInfo">
+				<span>경기도 안양시 만안구 일직로94번길 3, 7층 A동(석수동)</span>
+				<span>TEL. 031-347-7230~2</span>
+				<span>FAX. 031-347-7233</span><br>
+				<span>EMAIL : sales@keeworks.com</span>
+				<small class="copy">Copyright © 2015 Keeworks. All Rights Reserved.</small>
+			</p>
+		</footer>
+		<!-- //footer -->
+	</div>
+
+</body>
+</html>

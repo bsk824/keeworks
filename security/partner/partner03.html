@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="/resource/font/style.css">
+	<link rel="stylesheet" type="text/css" href="/resource/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/resource/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/resource/css/resp.css" media="screen and (max-width: 1070px)">
+	<script type="text/javascript" src="/resource/js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="/resource/js/swiper.min.js"></script>
+	<script type="text/javascript" src="/resource/js/ui.js"></script>
+	<!--[if lt IE 9]>
+		<script src="/resource/js/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<div id="wrap">
+		
+		<!-- header -->
+		<header id="header" onmouseleave="subClose()">
+			<div class="headTop">
+				<h1 class="logo"><a href="#"><img src="/resource/images/logo.png" alt="keeworks"></a></h1>
+				<button type="button" class="btnMenu" onclick="menu()"><span>메뉴</span></button>
+			</div>
+			<nav id="gnb">
+				<div class="search">
+					<fieldset class="inputSearch">
+						<legend>검색어 입력</legend>
+						<button type="button" class="btnSearchClose" onclick="search(this, 'close');">닫기</button>
+						<input type="text" class="inputTxt" placeholder="검색어를 입력하세요.">
+						<button type="button" class="btnSearch">Search</button>
+					</fieldset>
+					<button type="button" class="btnSearch" onclick="search(this, 'open');">Search</button>
+				</div>
+				<ul class="menu gnbMenu4">
+					<li><a href="#" onmouseenter="subOpen(this);">ABOUT</a>
+						<div class="subMenu">
+							<strong class="cate">ABOUT</strong>
+							<ul class="list menu2">
+								<li><a href="#">Over View</a></li>
+								<li><a href="#">파트너</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" onmouseenter="subOpen(this);">파트너</a>
+						<div class="subMenu">
+							<strong class="cate">파트너</strong>
+							<ul class="list menu3">
+								<li><a href="#">가치제공</a></li>
+								<li><a href="#">파트너채결정책</a></li>
+								<li><a href="#">파트너등록</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" onmouseenter="subOpen(this);">지식센터</a>
+						<div class="subMenu menu2">
+							<strong class="cate">지식센터</strong>
+							<ul class="list menu3">
+								<li><a href="#">용량 계산기</a></li>
+								<li><a href="#">화각 계산기</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" onmouseenter="subOpen(this);">고객지원</a>
+						<div class="subMenu">
+							<strong class="cate">고객지원</strong>
+							<ul class="list menu5">
+								<li><a href="#">뉴스레터</a></li>
+								<li><a href="#">견적&amp;제품문의</a></li>
+								<li><a href="#">기술문의</a></li>
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">원격지원</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!-- //header -->
+
+		<!-- container -->
+		<div id="container">
+
+			<h2 class="pageTitle">파트너</h2>
+			<section class="section">
+				<div class="tabMenu3">
+					<ul class="tabItem3">
+						<li><a href="#"><span>가치제공</span></a></li>
+						<li><a href="#"><span>파트너체결정책</span></a></li>
+						<li class="active"><a href="#"><span>파트너 등록</span></a></li>
+					</ul>
+				</div>
+
+				<p class="tableTip2">파트너 등록 시 제품 다운로드 및 키웍스의 다양한 파트너 혜택을 누리실 수 있습니다.</p>
+
+				<div class="tableType1">
+					<table class="inputTable">
+						<caption>상담정보 입력</caption>
+						<colgroup>
+							<col style="width:170px;">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">파트너 ID</th>
+								<td>
+									<input type="text" class="inputTxt" style="width: 300px;">
+									<span class="tip">* 제품관련 자료 다운로드시 로그인 ID</span>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">파트너 비밀번호</th>
+								<td>
+									<input type="password" class="inputTxt" style="width: 300px;">
+									<span class="tip">* 영문숫자조합 6자리 이상 20자리 미만</span>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">파트너 비밀번호 확인</th>
+								<td>
+									<input type="password" class="inputTxt" style="width: 300px;">
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">상호</th>
+								<td>
+									<input type="text" class="inputTxt" style="width: 300px;">
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">사업자등록번호</th>
+								<td>
+									<input type="text" class="inputTxt" style="width: 300px;">
+									<span class="tip">* - 제외 EX (12301456789)</span>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">대표자</th>
+								<td>
+									<input type="text" class="inputTxt" style="width: 300px;">
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">주소</th>
+								<td>
+									<input type="text" class="inputTxt" style="width: 300px;">
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">주소</th>
+								<td>
+									<span class="row typePhone" style="width: 300px;">
+										<span class="cell">
+											<select name="" id="">
+												<option value="">선택</option>
+											</select>
+										</span>
+										<span class="cell sym">-</span>
+										<span class="cell">
+											<input type="text" class="inputTxt">
+										</span>
+										<span class="cell sym">-</span>
+										<span class="cell">
+											<input type="text" class="inputTxt">
+										</span>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">담당자 E-mail</th>
+								<td>
+									<input type="text" class="inputTxt" style="width: 300px;">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="listFoot">
+					<span class="rightBtn">
+						<button type="submit" class="btnType2">취소</button>
+						<button type="submit" class="btnType1">파트너 등록</button>
+					</span>
+				</div>
+	
+			</section>
+
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<footer id="footer">
+			<span class="corpLink">
+				<a href="#"><img src="/resource/images/icon_foot_logo1.gif" alt=""></a>
+				<a href="#"><img src="/resource/images/icon_foot_logo2.gif" alt=""></a>
+				<a href="#"><img src="/resource/images/icon_foot_logo3.gif" alt=""></a>
+				<a href="#"><img src="/resource/images/icon_foot_logo4.gif" alt=""></a>
+				<a href="#"><img src="/resource/images/icon_foot_logo5.gif" alt=""></a>
+			</span>
+			<p class="footInfo">
+				<span>경기도 안양시 만안구 일직로94번길 3, 7층 A동(석수동)</span>
+				<span>TEL. 031-347-7230~2</span>
+				<span>FAX. 031-347-7233</span><br>
+				<span>EMAIL : sales@keeworks.com</span>
+				<small class="copy">Copyright © 2015 Keeworks. All Rights Reserved.</small>
+			</p>
+		</footer>
+		<!-- //footer -->
+	</div>
+
+</body>
+</html>
