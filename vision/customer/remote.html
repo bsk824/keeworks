@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="/keeworks/resource/font/style.css">
+	<link rel="stylesheet" type="text/css" href="/keeworks/resource/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/keeworks/resource/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/keeworks/resource/css/resp.css" media="screen and (max-width: 1070px)">
+	<script type="text/javascript" src="/keeworks/resource/js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="/keeworks/resource/js/swiper.min.js"></script>
+	<script type="text/javascript" src="/keeworks/resource/js/ui.js"></script>
+	<!--[if lt IE 9]>
+		<script src="/keeworks/resource/js/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<div id="wrap">
+		
+		<!-- header -->
+		<header id="header" onmouseleave="subClose()">
+			<div class="headTop">
+				<h1 class="logo"><a href="#"><img src="/keeworks/resource/images/logo.png" alt="keeworks"></a></h1>
+				<button type="button" class="btnMenu" onclick="menu()"><span>메뉴</span></button>
+			</div>
+			<nav id="gnb">
+				<div class="search">
+					<fieldset class="inputSearch">
+						<legend>검색어 입력</legend>
+						<button type="button" class="btnSearchClose" onclick="search(this, 'close');">닫기</button>
+						<input type="text" class="inputTxt" placeholder="검색어를 입력하세요.">
+						<button type="button" class="btnSearch">Search</button>
+					</fieldset>
+					<button type="button" class="btnSearch" onclick="search(this, 'open');">Search</button>
+				</div>
+				<ul class="menu">
+					<li><a href="#" onmouseenter="subOpen(this);">ABOUT</a>
+						<div class="subMenu">
+							<strong class="cate">ABOUT</strong>
+							<ul class="list menu3">
+								<li><a href="#">파트너</a></li>
+								<li><a href="#">비전</a></li>
+								<li><a href="#">조직도</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" onmouseenter="subOpen(this);">SOLUTION</a>
+						<div class="subMenu">
+							<strong class="cate">SOLUTION</strong>
+							<ul class="list menu4">
+								<li><a href="#">KEY DESIGN</a></li>
+								<li><a href="#">광학 계산기</a></li>
+								<li><a href="#">C-mount 계산기</a></li>
+								<li><a href="#">광학 시스템 설계 엔진</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" onmouseenter="subOpen(this);">제품</a>
+						<div class="subMenu menuProd">
+							<strong class="cate">제품</strong>
+							<ul class="list menu4">
+								<li>
+									<strong>카메라</strong>
+									<ul class="subList">
+										<li><a href="#">Area</a></li>
+										<li><a href="#">Line scan</a></li>
+										<li><a href="#">Smart</a></li>
+									</ul>
+								</li>
+								<li>
+									<strong>렌즈</strong>
+									<ul class="subList">
+										<li><a href="#">C-mount</a></li>
+										<li><a href="#">F-mount</a></li>
+										<li><a href="#">Large format</a></li>
+										<li><a href="#">Telecentric</a></li>
+									</ul>
+								</li>
+								<li>
+									<strong>조명</strong>
+									<ul class="subList">
+										<li><a href="#">Area light</a></li>
+										<li><a href="#">Line light</a></li>
+										<li><a href="#">Effilux</a></li>
+									</ul>
+									<strong>보드</strong>
+									<ul class="subList">
+										<li><a href="#">CXP</a></li>
+										<li><a href="#">CL</a></li>
+										<li><a href="#">Analog</a></li>
+										<li><a href="#">GigE</a></li>
+									</ul>
+								</li>
+								<li>
+									<strong>라이브러리</strong>
+									<ul class="subList">
+										<li><a href="#">Matrox</a></li>
+									</ul>
+									<strong>3D</strong>
+									<ul class="subList">
+										<li><a href="#">Automation technology</a></li>
+										<li><a href="#">IFM</a></li>
+										<li><a href="#">Laon</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" onmouseenter="subOpen(this);">다운로드</a>
+						<div class="subMenu">
+							<strong class="cate">다운로드</strong>
+							<ul class="list menu4">
+								<li><a href="#">SDK</a></li>
+								<li><a href="#">제품브로셔</a></li>
+								<li><a href="#">샘플소스</a></li>
+								<li><a href="#">기타</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" onmouseenter="subOpen(this);">고객지원</a>
+						<div class="subMenu">
+							<strong class="cate">고객지원</strong>
+							<ul class="list menu5">
+								<li><a href="#">뉴스레터</a></li>
+								<li><a href="#">견적&amp;제품문의</a></li>
+								<li><a href="#">기술문의</a></li>
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">원격지원</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!-- //header -->
+
+		<!-- container -->
+		<div id="container">
+
+			<h2 class="pageTitle">원격지원</h2>
+			<section class="section">
+				<p class="remoteTxt">
+					원격지원 서비스는 상담 중에 엔지니어가 고객님의 화면을 볼 필요가 있는 경우에 고객님의 동의를 받아서 진행하는 전화상담 도우미 서비스 입니다.<br>
+					한컴 엔지니어가 고객님의 화면을 함께 보면서 설명해 드리므로 신속 정확하게 도와드릴 수 있는 장점이 있습니다. <br>
+					또한 별도의 프로그램 설치 없이 웹브라우저를 이용하므로 복잡한 설치 시간이 필요 없습니다.
+				</p>
+				<ol class="remoteStep">
+					<li class="step1">
+						<b>STEP 1</b>
+						키웍스 기술지원센터로<br> 전화를 합니다.
+					</li>
+					<li class="step2">
+						<b>STEP 2</b>
+						<span class="ftColor1">기술상담 엔지니어가<br> 연결</span>되면 상담 내용을<br> 알려줍니다.
+					</li>
+					<li class="step3">
+						<b>STEP 3</b>
+						엔지니어가 고객님의 PC를<br> 직접 볼 수 있도록<br> <span class="ftColor1">인터넷 브라우저를 작동</span>합니다.
+					</li>
+					<li class="step4">
+						<b>STEP 4</b>
+						키웍스 사이트의<br> <span class="ftColor1">'고객지원 &gt; 원격지원'</span>을<br> 클릭합니다.
+					</li>
+					<li class="step5">
+						<b>STEP 5</b>
+						엔지니어의 안내에 따라<br> 활성화된 <span class="ftColor1">원격지원 접속번호를<br> 클릭</span>합니다.
+					</li>
+				</ol>
+			</section>
+
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<footer id="footer">
+			<span class="corpLink">
+				<a href="#"><img src="/keeworks/resource/images/icon_foot_logo1.gif" alt=""></a>
+				<a href="#"><img src="/keeworks/resource/images/icon_foot_logo2.gif" alt=""></a>
+				<a href="#"><img src="/keeworks/resource/images/icon_foot_logo3.gif" alt=""></a>
+				<a href="#"><img src="/keeworks/resource/images/icon_foot_logo4.gif" alt=""></a>
+				<a href="#"><img src="/keeworks/resource/images/icon_foot_logo5.gif" alt=""></a>
+			</span>
+			<p class="footInfo">
+				<span>경기도 안양시 만안구 일직로94번길 3, 7층 A동(석수동)</span>
+				<span>TEL. 031-347-7230~2</span>
+				<span>FAX. 031-347-7233</span><br>
+				<span>EMAIL : sales@keeworks.com</span>
+				<small class="copy">Copyright © 2015 Keeworks. All Rights Reserved.</small>
+			</p>
+		</footer>
+		<!-- //footer -->
+	</div>
+
+</body>
+</html>

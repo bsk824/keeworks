@@ -387,6 +387,10 @@ textarea {
 	font-size: 16px;
 	color: #33509c;
 }
+.subTitle2 {
+	font-size: 26px;
+	color: #333;
+}
 .contMg {margin-top: 40px;}
 
 [class*="btnType"] {

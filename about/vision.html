@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="/keeworks/resource/font/style.css">
+	<link rel="stylesheet" type="text/css" href="/keeworks/resource/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/keeworks/resource/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/keeworks/resource/css/resp.css" media="screen and (max-width: 1070px)">
+	<script type="text/javascript" src="/keeworks/resource/js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="/keeworks/resource/js/ui.js"></script>
+	<!--[if lt IE 9]>
+		<script src="/keeworks/resource/js/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<div id="wrap">
+		
+		<!-- header -->
+		<header id="header" onmouseleave="subClose()">
+			<div class="headTop">
+				<h1 class="logo"><a href="#"><img src="/keeworks/resource/images/logo.png" alt="keeworks"></a></h1>
+				<button type="button" class="btnMenu" onclick="menu()"><span>메뉴</span></button>
+			</div>
+			<nav id="gnb">
+				<div class="search">
+					<fieldset class="inputSearch">
+						<legend>검색어 입력</legend>
+						<button type="button" class="btnSearchClose" onclick="search(this, 'close');">닫기</button>
+						<input type="text" class="inputTxt" placeholder="검색어를 입력하세요.">
+						<button type="button" class="btnSearch">Search</button>
+					</fieldset>
+					<button type="button" class="btnSearch" onclick="search(this, 'open');">Search</button>
+				</div>
+				<ul class="menu gnbMenu4">
+					<li><a href="#" onmouseenter="subOpen(this);">ABOUT</a>
+						<div class="subMenu">
+							<strong class="cate">ABOUT</strong>
+							<ul class="list menu3">
+								<li><a href="#">파트너</a></li>
+								<li><a href="#">비전</a></li>
+								<li><a href="#">조직도</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" onmouseenter="subOpen(this);">MACHINE VISION</a></li>
+					<li><a href="#" onmouseenter="subOpen(this);">VIDEO SECURITY</a></li>
+					<li><a href="#" onmouseenter="subOpen(this);">CONTACT US</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- //header -->
+
+		<!-- container -->
+		<div id="container">
+
+			<h2 class="pageTitle">비전</h2>
+
+			<section class="section visionWrap">
+				<p>
+					<span>Creative Imaging Expert</span>
+					창조적인 영상전문가로서 고객여러분의 성공에 열쇠(Key)가 되겠습니다.
+				</p>
+				<div>
+					<img src="/keeworks/resource/images/contents/img_vision.jpg" alt="핵심가치 - 고객, 전문성, 신뢰, 창의성, 조화">
+				</div>
+			</section>
+			
+		</div>
+		<!-- //container -->
+		<!-- footer -->
+		<footer id="footer">
+			<span class="corpLink">
+				<a href="#"><img src="/keeworks/resource/images/icon_foot_logo1.gif" alt=""></a>
+				<a href="#"><img src="/keeworks/resource/images/icon_foot_logo2.gif" alt=""></a>
+				<a href="#"><img src="/keeworks/resource/images/icon_foot_logo3.gif" alt=""></a>
+				<a href="#"><img src="/keeworks/resource/images/icon_foot_logo4.gif" alt=""></a>
+				<a href="#"><img src="/keeworks/resource/images/icon_foot_logo5.gif" alt=""></a>
+			</span>
+			<p class="footInfo">
+				<span>경기도 안양시 만안구 일직로94번길 3, 7층 A동(석수동)</span>
+				<span>TEL. 031-347-7230~2</span>
+				<span>FAX. 031-347-7233</span><br>
+				<span>EMAIL : sales@keeworks.com</span>
+				<small class="copy">Copyright © 2015 Keeworks. All Rights Reserved.</small>
+			</p>
+		</footer>
+		<!-- //footer -->
+	</div>
+
+</body>
+</html>

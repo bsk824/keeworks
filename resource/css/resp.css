@@ -750,3 +750,89 @@
 		font-size: 1.5rem;
 	}
 }
+
+@media screen and (max-width: 767px) {
+	.visionWrap p {
+		margin: 0 0 2rem;
+		font-size: 1.4rem;
+	}
+	.visionWrap span {
+		font-size: 2rem;
+	}
+	.organogram img {display: none;}
+	.organogram .mo {display: inline;}
+}
+@media screen and (max-width: 1023px) {
+	.remoteTxt {
+		padding: 40px 100px 40px 200px;
+		background-position: 80px 50%;
+	}
+	.remoteStep {font-size: 0;}
+	.remoteStep li {
+		display: inline-block;
+		float: none;
+		width: 33.33%;
+		font-size: 14px;
+		vertical-align: top;
+	}
+	.remoteStep li.step4:after {display: none;}
+}
+@media screen and (max-width: 767px) {
+	.remoteTxt {
+		padding: 10rem 1rem 2rem;
+		background-position: 50% 2rem;
+		background-size: 7rem;
+	}
+	.remoteStep li {
+		width: 50%;
+		margin: 0 0 2rem
+	}
+	.remoteStep li:before {
+		width: 8rem; height: 8rem;
+		background-size: cover !important;
+	}
+	.remoteStep li.step4:after {display: block;}
+	.remoteStep li.step3:after,
+	.remoteStep li.step5:after {display: none;}
+	.remoteStep li:after {
+		top: 2.5rem;
+		width: 1.5rem; height: 2.7rem;
+		background-size: cover;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.partnerList li {width: 50%;}
+	.partnerList .box { height: 320px;}
+}
+@media screen and (max-width: 767px) {
+	.partnerList li {
+		float: none;
+		width: auto;
+		margin: 6rem 0 0;
+		font-size: 1.3rem;
+	}
+	.partnerList .box {
+		height: auto;
+		padding: 0 1rem 2rem;
+	}
+	.partnerList .box:after {
+		top: -4rem;
+		width: 8rem; height: 8rem;
+		margin-left: -4rem;
+		background-size: cover !important;
+	}
+	.partnerList strong {
+		margin: 5rem 0 3rem; 
+		font-size: 2.6rem;
+	}
+
+	.partnerPolicy strong {
+		margin: 0 0 2rem;
+		font-size: 2rem;
+	}
+	.partnerPolicy img {
+		margin-top: 4rem;
+	}
+}
+

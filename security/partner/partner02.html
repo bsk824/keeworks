@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="/keeworks/resource/font/style.css">
+	<link rel="stylesheet" type="text/css" href="/keeworks/resource/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/keeworks/resource/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/keeworks/resource/css/resp.css" media="screen and (max-width: 1070px)">
+	<script type="text/javascript" src="/keeworks/resource/js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="/keeworks/resource/js/swiper.min.js"></script>
+	<script type="text/javascript" src="/keeworks/resource/js/ui.js"></script>
+	<!--[if lt IE 9]>
+		<script src="/keeworks/resource/js/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<div id="wrap">
+		
+		<!-- header -->
+		<header id="header" onmouseleave="subClose()">
+			<div class="headTop">
+				<h1 class="logo"><a href="#"><img src="/keeworks/resource/images/logo.png" alt="keeworks"></a></h1>
+				<button type="button" class="btnMenu" onclick="menu()"><span>메뉴</span></button>
+			</div>
+			<nav id="gnb">
+				<div class="search">
+					<fieldset class="inputSearch">
+						<legend>검색어 입력</legend>
+						<button type="button" class="btnSearchClose" onclick="search(this, 'close');">닫기</button>
+						<input type="text" class="inputTxt" placeholder="검색어를 입력하세요.">
+						<button type="button" class="btnSearch">Search</button>
+					</fieldset>
+					<button type="button" class="btnSearch" onclick="search(this, 'open');">Search</button>
+				</div>
+				<ul class="menu gnbMenu4">
+					<li><a href="#" onmouseenter="subOpen(this);">ABOUT</a>
+						<div class="subMenu">
+							<strong class="cate">ABOUT</strong>
+							<ul class="list menu2">
+								<li><a href="#">Over View</a></li>
+								<li><a href="#">파트너</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" onmouseenter="subOpen(this);">파트너</a>
+						<div class="subMenu">
+							<strong class="cate">파트너</strong>
+							<ul class="list menu3">
+								<li><a href="#">가치제공</a></li>
+								<li><a href="#">파트너채결정책</a></li>
+								<li><a href="#">파트너등록</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" onmouseenter="subOpen(this);">지식센터</a>
+						<div class="subMenu menu2">
+							<strong class="cate">지식센터</strong>
+							<ul class="list menu3">
+								<li><a href="#">용량 계산기</a></li>
+								<li><a href="#">화각 계산기</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" onmouseenter="subOpen(this);">고객지원</a>
+						<div class="subMenu">
+							<strong class="cate">고객지원</strong>
+							<ul class="list menu5">
+								<li><a href="#">뉴스레터</a></li>
+								<li><a href="#">견적&amp;제품문의</a></li>
+								<li><a href="#">기술문의</a></li>
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">원격지원</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!-- //header -->
+
+		<!-- container -->
+		<div id="container">
+
+			<h2 class="pageTitle">파트너</h2>
+			<section class="section">
+				<div class="tabMenu3">
+					<ul class="tabItem3">
+						<li><a href="#"><span>가치제공</span></a></li>
+						<li class="active"><a href="#"><span>파트너체결정책</span></a></li>
+						<li><a href="#"><span>파트너 등록</span></a></li>
+					</ul>
+				</div>
+
+				<p class="partnerPolicy">
+					<strong>“키웍스는 고객을 성공하게 함으로써 성공하겠습니다.”</strong>
+					키웍스는 고객에게 최적화된 솔루션을 제공하기 위해 파트너 체결정책을 시행하고 있습니다.<br>
+					키웍스와의 PartnerShip 을 통해 키웍스가 제안하는 최적의 솔루션, 최신 정보 그리고 기술 지원등의 풍부한 Partner Program 을 제공받을 수 있습니다.
+					<img src="/keeworks/resource/images/contents/img_partner02.jpg" alt="고객만족 제품 리더쉽 확보 , 최적화된 솔루션 제안, 최신 트렌드 분석, 밀착형 기술지원">
+				</p>
+
+	
+			</section>
+
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<footer id="footer">
+			<span class="corpLink">
+				<a href="#"><img src="/keeworks/resource/images/icon_foot_logo1.gif" alt=""></a>
+				<a href="#"><img src="/keeworks/resource/images/icon_foot_logo2.gif" alt=""></a>
+				<a href="#"><img src="/keeworks/resource/images/icon_foot_logo3.gif" alt=""></a>
+				<a href="#"><img src="/keeworks/resource/images/icon_foot_logo4.gif" alt=""></a>
+				<a href="#"><img src="/keeworks/resource/images/icon_foot_logo5.gif" alt=""></a>
+			</span>
+			<p class="footInfo">
+				<span>경기도 안양시 만안구 일직로94번길 3, 7층 A동(석수동)</span>
+				<span>TEL. 031-347-7230~2</span>
+				<span>FAX. 031-347-7233</span><br>
+				<span>EMAIL : sales@keeworks.com</span>
+				<small class="copy">Copyright © 2015 Keeworks. All Rights Reserved.</small>
+			</p>
+		</footer>
+		<!-- //footer -->
+	</div>
+
+</body>
+</html>

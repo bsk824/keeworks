@@ -578,3 +578,153 @@
 	margin: 5px 0 0;
 	height: 60px;
 }
+
+.visionWrap {
+	text-align: center;
+}
+.visionWrap p {
+	margin: 0 0 20px;
+	color: #4c4c4c;
+	font-size: 20px;
+}
+.visionWrap span {
+	display: block;
+	color: #2d4fb4;
+	font-size: 34px;
+	text-transform: uppercase;
+}
+.visionWrap img {max-width: 100%;}
+
+.organogram {text-align: center;}
+.organogram img {max-width: 100%;}
+.organogram .mo {display: none;}
+
+.remoteTxt {
+	padding: 70px 170px 70px 300px;
+	background: url('/keeworks/resource/images/contents/bg_remote.png') no-repeat 180px 50%;
+	border-top: 1px solid #c6c6c6;
+	border-bottom: 1px solid #c6c6c6;
+	font-size: 13px;
+	line-height: 1.7;
+}
+.remoteStep {
+	margin: 30px 0 0;
+	text-align: center;
+}
+.remoteStep:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.remoteStep li {
+	position: relative;
+	float: left;
+	width: 20%;
+	text-align: center;
+	font-weight: 400;
+}
+.remoteStep li:before {
+	content: "";
+	display: inline-block;
+	width: 130px;
+	height: 130px;
+}
+.remoteStep li.step1:before {background:url('/keeworks/resource/images/contents/img_remote_step01.png') no-repeat;}
+.remoteStep li.step2:before {background:url('/keeworks/resource/images/contents/img_remote_step02.png') no-repeat;}
+.remoteStep li.step3:before {background:url('/keeworks/resource/images/contents/img_remote_step03.png') no-repeat;}
+.remoteStep li.step4:before {background:url('/keeworks/resource/images/contents/img_remote_step04.png') no-repeat;}
+.remoteStep li.step5:before {background:url('/keeworks/resource/images/contents/img_remote_step05.png') no-repeat;}
+.remoteStep li:after {
+	content: "";
+	position: absolute;
+	top: 40px; left: 0;
+	width: 25px; height: 45px;
+	margin-left: -12px;
+	background: url('/keeworks/resource/images/contents/bg_step_arrow.png') no-repeat;
+}
+.remoteStep li.step1:after {display: none;}
+.remoteStep li b {
+	display: block;
+	margin: 15px 0 10px;
+	font-size: 17px;
+	color: #486ac2;
+}
+
+.partnerList:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.partnerList {
+	margin: 0 0 0 -20px;
+	text-align: center;
+	font-size: 0;
+}
+.partnerList li {
+	float: left;
+	width: 25%;
+	margin: 80px 0 0;
+	font-size: 13px;
+}
+.partnerList .box {
+	position: relative;
+	height: 330px;
+	margin: 0 0 0 20px;
+	padding: 0 15px;
+	border: 1px solid #ccdee8;
+	border-radius: 5px;
+	box-shadow: 3px 3px 5px rgba(57,80,140,.2);
+	line-height: 1.6;
+}
+.partnerList .box:after {
+	content: "";
+	position: absolute;
+	top: -60px; left: 50%;
+	width: 110px; height: 110px;
+	margin-left: -55px;
+}
+.partnerList .item1 .box:after {background: url('/keeworks/resource/images/contents/img_partner01_01.png') no-repeat;}
+.partnerList .item2 .box:after {background: url('/keeworks/resource/images/contents/img_partner01_02.png') no-repeat;}
+.partnerList .item3 .box:after {background: url('/keeworks/resource/images/contents/img_partner01_03.png') no-repeat;}
+.partnerList .item4 .box:after {background: url('/keeworks/resource/images/contents/img_partner01_04.png') no-repeat;}
+
+.partnerList strong {
+	position: relative;
+	display: block;
+	margin: 80px 0 30px;
+	font-size: 26px;
+	font-weight: bold;
+}
+.partnerList strong:after {
+	content: "";
+	position: absolute;
+	bottom: 0; left: 50%;
+	width: 75px; height: 1px;
+	margin: 0 0 -12px -33px;
+	background: #486ac2;
+}
+.partnerList .item1 strong {color: #3762d3;}
+.partnerList .item2 strong {color: #067cc7;}
+.partnerList .item3 strong {color: #33509c;}
+.partnerList .item4 strong {color: #566da1;}
+
+.partnerPolicy {
+	text-align: center;
+}
+.partnerPolicy strong {
+	display: block;
+	margin: 0 0 20px;
+	font-size: 26px;
+	color: #486ac2;
+}
+.partnerPolicy img {
+	max-width: 100%;
+	margin-top: 45px;
+}
+.overviewTxt {
+	text-align: center;
+}
+.overviewTxt img {
+	max-width: 100%;
+	margin: 50px 0;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="/keeworks/resource/font/style.css">
+	<link rel="stylesheet" type="text/css" href="/keeworks/resource/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/keeworks/resource/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/keeworks/resource/css/resp.css" media="screen and (max-width: 1070px)">
+	<script type="text/javascript" src="/keeworks/resource/js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="/keeworks/resource/js/swiper.min.js"></script>
+	<script type="text/javascript" src="/keeworks/resource/js/ui.js"></script>
+	<!--[if lt IE 9]>
+		<script src="/keeworks/resource/js/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<div id="wrap">
+		
+		<!-- header -->
+		<header id="header" onmouseleave="subClose()">
+			<div class="headTop">
+				<h1 class="logo"><a href="#"><img src="/keeworks/resource/images/logo.png" alt="keeworks"></a></h1>
+				<button type="button" class="btnMenu" onclick="menu()"><span>메뉴</span></button>
+			</div>
+			<nav id="gnb">
+				<div class="search">
+					<fieldset class="inputSearch">
+						<legend>검색어 입력</legend>
+						<button type="button" class="btnSearchClose" onclick="search(this, 'close');">닫기</button>
+						<input type="text" class="inputTxt" placeholder="검색어를 입력하세요.">
+						<button type="button" class="btnSearch">Search</button>
+					</fieldset>
+					<button type="button" class="btnSearch" onclick="search(this, 'open');">Search</button>
+				</div>
+				<ul class="menu gnbMenu4">
+					<li><a href="#" onmouseenter="subOpen(this);">ABOUT</a>
+						<div class="subMenu">
+							<strong class="cate">ABOUT</strong>
+							<ul class="list menu2">
+								<li><a href="#">Over View</a></li>
+								<li><a href="#">파트너</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" onmouseenter="subOpen(this);">파트너</a>
+						<div class="subMenu">
+							<strong class="cate">파트너</strong>
+							<ul class="list menu3">
+								<li><a href="#">가치제공</a></li>
+								<li><a href="#">파트너채결정책</a></li>
+								<li><a href="#">파트너등록</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" onmouseenter="subOpen(this);">지식센터</a>
+						<div class="subMenu menu2">
+							<strong class="cate">지식센터</strong>
+							<ul class="list menu3">
+								<li><a href="#">용량 계산기</a></li>
+								<li><a href="#">화각 계산기</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" onmouseenter="subOpen(this);">고객지원</a>
+						<div class="subMenu">
+							<strong class="cate">고객지원</strong>
+							<ul class="list menu5">
+								<li><a href="#">뉴스레터</a></li>
+								<li><a href="#">견적&amp;제품문의</a></li>
+								<li><a href="#">기술문의</a></li>
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">원격지원</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!-- //header -->
+
+		<!-- container -->
+		<div id="container">
+
+			<h2 class="pageTitle">Overview</h2>
+			<section class="section">
+				<p class="overviewTxt">
+					영상보안사업본부는 전세계 경쟁력 있는 파트너사와 더불어 고객에게 보안 컨설팅 및 프로젝트 구축을 위한 솔루션을 제공합니다.<br>
+					최신 Trend 에 맞는 물리 보안 솔루션을 구축하고자 하는 고객은 영상보안사업본부에서 신기술이 접목된 솔루션을 가장 먼저 만나 볼 수 있습니다.
+					<img src="/keeworks/resource/images/contents/img_overview.jpg" alt="">
+				</p>
+				
+				<ul class="parterList">
+					<li>
+						<span class="img"><img src="http://www.keeworks.com/res/images/about/partner_ext01.jpg" alt="milestone - The Open Platform Company"></span>
+						<dl>
+							<dt>Milestone System</dt>
+							<dd><a href="https://www.milestonesys.com" target="_blank">https://www.milestonesys.com</a></dd>
+							<dd class="addr">Banemarksvej 50, 2605 Brøndby, Denmark</dd>
+						</dl>
+					</li>
+					<li>
+						<span class="img"><img src="http://www.keeworks.com/res/images/about/partner_ext02.jpg" alt="Arecont Vision - megapixel technology... beyond imagination"></span>
+						<dl>
+							<dt>Arecont Vision</dt>
+							<dd><a href="http://www.arecontvision.com" target="_blank">http://www.arecontvision.com</a></dd>
+							<dd class="addr">425 E. Colorado St., 7th Floor Glendale, CA 91205, USA</dd>
+						</dl>
+					</li>
+					<li>
+						<span class="img"><img src="http://www.keeworks.com/res/images/about/partner_ext03.jpg" alt="freeD - FREE DIMENSIONAL VIDEO"></span>
+						<dl>
+							<dt>Replay Technologies</dt>
+							<dd><a href="http://replay-technologies.com" target="_blank">http://replay-technologies.com</a></dd>
+							<dd class="addr">Habarzel Street Tel Aviv, 69710, Israel</dd>
+						</dl>
+					</li>
+					<li>
+						<span class="img"><img src="http://www.keeworks.com/res/images/about/partner_ext04.jpg" alt="AXIS - COMMUNICATIONS"></span>
+						<dl>
+							<dt>AXIS</dt>
+							<dd><a href="http://www.axis.com" target="_blank">http://www.axis.com</a></dd>
+							<dd class="addr">Emdalavägen 14,223 69 Lund, Sweden</dd>
+						</dl>
+					</li>
+					<li>
+						<span class="img"><img src="http://www.keeworks.com/res/images/about/partner_ext05.jpg" alt="nuuo since 2004 - Trusted Video Management"></span>
+						<dl>
+							<dt>NUUO</dt>
+							<dd><a href="http://www.nuuo.com" target="_blank">http://www.nuuo.com</a></dd>
+							<dd class="addr">231 Taiwan New Taipei City, Xindian District, Section 3, Beixin Rd, 207-1號,B1</dd>
+						</dl>
+					</li>
+					<li>
+						<span class="img"><img src="http://www.keeworks.com/res/images/about/partner_ext06.jpg" alt="SONY"></span>
+						<dl>
+							<dt>SONY</dt>
+							<dd><a href="http://www.sony.com/" target="_blank">http://www.sony.com/</a></dd>
+							<dd class="addr">135-0091 Tokyo, Minato, Daiba, 1 Chome−1−7−1,Aqua City Odaiba, ディアージュ5F</dd>
+						</dl>
+					</li>
+					<li>
+						<span class="img"><img src="http://www.keeworks.com/res/images/about/partner_ext07.jpg" alt="raytec"></span>
+						<dl>
+							<dt>Raytec</dt>
+							<dd><a href="http://www.rayteccctv.com" target="_blank">http://www.rayteccctv.com</a></dd>
+							<dd class="addr">Unit 3 Wansbeck Business Park Rotary Parkway Ashington, Northumberland NE63 8QW, UK</dd>
+						</dl>
+					</li>
+					<li>
+						<span class="img"><img src="http://www.keeworks.com/res/images/about/partner_ext08.jpg" alt="HIKVISION"></span>
+						<dl>
+							<dt>HIKVISION</dt>
+							<dd><!-- <a href="#" target="_blank"></a> --></dd>
+							<dd class="addr">&nbsp;</dd>
+						</dl>
+					</li>
+				</ul>
+			</section>
+
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<footer id="footer">
+			<span class="corpLink">
+				<a href="#"><img src="/keeworks/resource/images/icon_foot_logo1.gif" alt=""></a>
+				<a href="#"><img src="/keeworks/resource/images/icon_foot_logo2.gif" alt=""></a>
+				<a href="#"><img src="/keeworks/resource/images/icon_foot_logo3.gif" alt=""></a>
+				<a href="#"><img src="/keeworks/resource/images/icon_foot_logo4.gif" alt=""></a>
+				<a href="#"><img src="/keeworks/resource/images/icon_foot_logo5.gif" alt=""></a>
+			</span>
+			<p class="footInfo">
+				<span>경기도 안양시 만안구 일직로94번길 3, 7층 A동(석수동)</span>
+				<span>TEL. 031-347-7230~2</span>
+				<span>FAX. 031-347-7233</span><br>
+				<span>EMAIL : sales@keeworks.com</span>
+				<small class="copy">Copyright © 2015 Keeworks. All Rights Reserved.</small>
+			</p>
+		</footer>
+		<!-- //footer -->
+	</div>
+
+</body>
+</html>
