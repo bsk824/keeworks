@@ -232,8 +232,8 @@
 		function stock() {
 			var myRequest = new Request('https://polling.finance.naver.com/api/realtime.nhn?query=SERVICE_ITEM:200470');
 			fetch(
-				// 'https://polling.finance.naver.com/api/realtime.nhn?query=SERVICE_ITEM:200470'
-				"http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getMsrstnAcctoRltmMesureDnsty?serviceKey=9OnL0usqDB3pkRFUbr5pRbntFPGyBW7Jeqfk6Jn4OQAqQWlgC06m23I1%2BcyPtZtg5V3f6D4y39ouIF%2FZu%2FuFLw%3D%3D&numOfRows=10&pageNo=1&stationName=%EC%A2%85%EB%A1%9C%EA%B5%AC&dataTerm=DAILY&ver=1.3&_returnType=json"
+				'https://polling.finance.naver.com/api/realtime.nhn?query=SERVICE_ITEM:200470'
+				// "http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getMsrstnAcctoRltmMesureDnsty?serviceKey=9OnL0usqDB3pkRFUbr5pRbntFPGyBW7Jeqfk6Jn4OQAqQWlgC06m23I1%2BcyPtZtg5V3f6D4y39ouIF%2FZu%2FuFLw%3D%3D&numOfRows=10&pageNo=1&stationName=%EC%A2%85%EB%A1%9C%EA%B5%AC&dataTerm=DAILY&ver=1.3&_returnType=json"
 			)
 			.then(function(response) {
 				JSON.parse(JSON.stringify(response));
@@ -241,8 +241,8 @@
 			});
 			$.ajax({
 				type: "GET",
-				// url : "https://polling.finance.naver.com/api/realtime.nhn?query=SERVICE_ITEM:200470",
-				url: "http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getMsrstnAcctoRltmMesureDnsty?serviceKey=9OnL0usqDB3pkRFUbr5pRbntFPGyBW7Jeqfk6Jn4OQAqQWlgC06m23I1%2BcyPtZtg5V3f6D4y39ouIF%2FZu%2FuFLw%3D%3D&numOfRows=10&pageNo=1&stationName=%EC%A2%85%EB%A1%9C%EA%B5%AC&dataTerm=DAILY&ver=1.3&_returnType=json",
+				url : "https://polling.finance.naver.com/api/realtime.nhn?query=SERVICE_ITEM:200470",
+				// url: "http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getMsrstnAcctoRltmMesureDnsty?serviceKey=9OnL0usqDB3pkRFUbr5pRbntFPGyBW7Jeqfk6Jn4OQAqQWlgC06m23I1%2BcyPtZtg5V3f6D4y39ouIF%2FZu%2FuFLw%3D%3D&numOfRows=10&pageNo=1&stationName=%EC%A2%85%EB%A1%9C%EA%B5%AC&dataTerm=DAILY&ver=1.3&_returnType=json",
 				dataType: "www-form-urlencoded",
 				success : function(data) {
 					console.log(data);
