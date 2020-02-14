@@ -117,7 +117,7 @@
 		top: 0; right: 0;
 		width: 5.6rem;
 		height: 100%;
-		background: url(/keeworks/resource/images/btn_search_mo.png) no-repeat 50%;
+		background: url(/resource/www/resource/images/btn_search_mo.png) no-repeat 50%;
 		background-size: 2.6rem;
 		font: 0/0 a;
 	}
@@ -138,11 +138,11 @@
 	}
 	#gnb .menu > li {
 		float: none;
-		width: auto;
+		width: auto !important;
 		border-bottom: 1px solid #b3b3b3;
 	}
 	#gnb .menu > li.open > a {
-		background: url(/keeworks/resource/images/bg_submenu_arrow.png) no-repeat right 1.5rem top 50%;
+		background: url(/resource/www/resource/images/bg_submenu_arrow.png) no-repeat right 1.5rem top 50%;
 	}
 	#gnb .menu > li > a {
 		padding: 0 1.5rem;
@@ -191,7 +191,7 @@
 	#container {
 		padding: 6.2rem 0 0;
 	}
-	
+
 	#footer {
 		text-align: center;
 		margin: 3rem 0 0;
@@ -234,7 +234,8 @@
 	}
 
 	.pageTitle {
-		margin: 2.5rem 0;
+		height: 15rem;
+		margin: 0 0 2.5rem;
 		font-size: 3rem;
 	}
 	.subTitle {
@@ -261,7 +262,6 @@
 	.tabMenu2 ul {margin: 0 -.1rem;}
 	.tabMenu2 li button,
 	.tabMenu2 li a {
-		width: 10rem;
 		line-height: 3rem;
 		margin: .1rem;
 		font-size: 1.4rem;
@@ -284,7 +284,7 @@
 		margin: 0 0 1rem;
 	}
 	.listFoot .pagination {display: block;}
-	 
+
 	.listFoot .rightBtn {text-align: right;}
 
 	.intro #container {
@@ -366,12 +366,12 @@
 		padding: 0 1rem 1rem;
 	}
 	.tableList table {table-layout:auto;}
-	.tableList th, 
+	.tableList th,
 	.tableList td {
 		padding: 1rem;
 		font-size: 1.2rem;
 	}
-	
+
 	.tableList .noti .ico {
 		width: 1.6rem; height: 1.4rem;
 		background-size: cover;
@@ -519,7 +519,7 @@
 	.itemsSlide .slidePage {
 		margin: 0;
 	}
-	
+
 	.prodSearch {
 		margin: 4rem 0 0;
 		padding: 1.5rem 0;
@@ -549,7 +549,7 @@
 		font-size: 1.4rem;
 		-webkit-line-clamp: 3;
 	}
-	.mainCont .phone { 
+	.mainCont .phone {
 		font-size: 1.5rem;
 	}
 	.mainCont .btnDownload {
@@ -626,7 +626,7 @@
 		border-top: 2px solid #33509c;
 	}
 	.chkSelBox td {padding: .5rem .5rem 1rem;}
-	
+
 	.chkSelBox td label,
 	.chkSelBox td label + label {margin: 0 .5rem;}
 
@@ -643,17 +643,6 @@
 		width: 10rem;
 		margin: 0 .5rem;
 	}
-}
-@media screen and (max-width: 1023px) {
-	.detailHead {
-		position: relative;
-		padding-left: 45%;
-	}
-	.detailHead .prodImg {
-		width: 45%; height: auto;
-	}
-	.detailHead .prodImg img {width: 100%;}
-	.detailHead .tableType1 {margin-left: 30px;}
 }
 @media screen and (max-width: 767px) {
 	.prodDetail .prodName {
@@ -705,7 +694,7 @@
 	.downloadTable tr:hover .name {color: #33509c;}
 	.downloadTable tr:hover .btnDown {
 		color: #666;
-		background-image: url('/keeworks/resource/images/btn_download2.png');
+		background-image: url('/resource/www/resource/images/btn_download2.png');
 		background-size: 1.7rem;
 	}
 }
@@ -823,7 +812,7 @@
 		background-size: cover !important;
 	}
 	.partnerList strong {
-		margin: 5rem 0 3rem; 
+		margin: 5rem 0 3rem;
 		font-size: 2.6rem;
 	}
 
@@ -835,4 +824,3 @@
 		margin-top: 4rem;
 	}
 }
-

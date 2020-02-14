@@ -4,14 +4,14 @@
 	position: absolute;
 	top: 0; bottom: 0; left: 0;
 	right: 50%;
-	background: url('/keeworks/resource/images/intro/img_intro1.jpg') no-repeat 50%;
+	background: url('/resource/www/resource/images/intro/img_intro1.jpg') no-repeat 50%;
 	background-size: cover;
 }
 .intro2 {
 	position: absolute;
 	top: 0; bottom: 0; right: 0;
 	left: 50%;
-	background: url('/keeworks/resource/images/intro/img_intro2.jpg') no-repeat 50%;
+	background: url('/resource/www/resource/images/intro/img_intro2.jpg') no-repeat 50%;
 	background-size: cover;
 }
 .intro1 a, .intro2 a {
@@ -28,7 +28,7 @@
 	padding: 15px 125px 35px 100px;
 	font-size: 16px;
 	color: #fff;
-	background: url('/keeworks/resource/images/btn_intro_link.png') no-repeat 100% 50%;
+	background: url('/resource/www/resource/images/btn_intro_link.png') no-repeat 100% 50%;
 }
 .intro1 strong, .intro2 strong {
 	display: inline-block;
@@ -268,7 +268,7 @@
 	display: inline-block;
 	width: 10px; height: 12px;
 	margin-left: 5px;
-	background: url('/keeworks/resource/images/btn_download.png') no-repeat;
+	background: url('/resource/www/resource/images/btn_download.png') no-repeat;
 }
 .mainCont .link {
 	position: absolute;
@@ -281,7 +281,7 @@
 	display: inline-block;
 	width: 7px; height: 11px;
 	margin-left: 5px;
-	background: url('/keeworks/resource/images/main/icon_link.png') no-repeat;
+	background: url('/resource/www/resource/images/main/icon_link.png') no-repeat;
 }
 .mainCont .sub {
 	display: block;
@@ -393,15 +393,18 @@
 
 .detailHead {
 	position: relative;
-	min-height: 240px;
+	min-height: 350px;
 	margin: 30px 0 50px;
-	padding-left: 535px;
+	padding-left: 385px;
 }
 .detailHead .prodImg {
 	position: absolute;
 	top: 0; left: 0;
-	width: 503px; height: 238px;
+	width: 350px; height: 350px;
 	border: 1px solid #e6e6e6;
+}
+.detailHead .prodImg img {
+	width: 100%; height: 100%;
 }
 
 .downloadTable {border-top: 2px solid #33509c;}
@@ -434,7 +437,7 @@
 }
 .downloadTable .btnDown {
 	padding-left: 26px;
-	background: url('/keeworks/resource/images/btn_download2.png') no-repeat;
+	background: url('/resource/www/resource/images/btn_download2.png') no-repeat;
 }
 .downloadTable tr:hover td {background: #486ac2;}
 .downloadTable tr:hover .size,
@@ -445,13 +448,13 @@
 .downloadTable tr:hover .name {color: #fff;}
 .downloadTable tr:hover .btnDown {
 	color: #fff;
-	background: url('/keeworks/resource/images/btn_download2_w.png') no-repeat;
+	background: url('/resource/www/resource/images/btn_download2_w.png') no-repeat;
 }
 
 .newsletterTop {
 	height: 310px;
 	padding-right: 40px;
-	background: url('/keeworks/resource/images/contents/bg_newsletter.jpg') no-repeat;
+	background: url('/resource/www/resource/images/contents/bg_newsletter.jpg') no-repeat;
 	color: #fff;
 	text-align: right;
 }
@@ -601,7 +604,7 @@
 
 .remoteTxt {
 	padding: 70px 170px 70px 300px;
-	background: url('/keeworks/resource/images/contents/bg_remote.png') no-repeat 180px 50%;
+	background: url('/resource/www/resource/images/contents/bg_remote.png') no-repeat 180px 50%;
 	border-top: 1px solid #c6c6c6;
 	border-bottom: 1px solid #c6c6c6;
 	font-size: 13px;
@@ -629,18 +632,18 @@
 	width: 130px;
 	height: 130px;
 }
-.remoteStep li.step1:before {background:url('/keeworks/resource/images/contents/img_remote_step01.png') no-repeat;}
-.remoteStep li.step2:before {background:url('/keeworks/resource/images/contents/img_remote_step02.png') no-repeat;}
-.remoteStep li.step3:before {background:url('/keeworks/resource/images/contents/img_remote_step03.png') no-repeat;}
-.remoteStep li.step4:before {background:url('/keeworks/resource/images/contents/img_remote_step04.png') no-repeat;}
-.remoteStep li.step5:before {background:url('/keeworks/resource/images/contents/img_remote_step05.png') no-repeat;}
+.remoteStep li.step1:before {background:url('/resource/www/resource/images/contents/img_remote_step01.png') no-repeat;}
+.remoteStep li.step2:before {background:url('/resource/www/resource/images/contents/img_remote_step02.png') no-repeat;}
+.remoteStep li.step3:before {background:url('/resource/www/resource/images/contents/img_remote_step03.png') no-repeat;}
+.remoteStep li.step4:before {background:url('/resource/www/resource/images/contents/img_remote_step04.png') no-repeat;}
+.remoteStep li.step5:before {background:url('/resource/www/resource/images/contents/img_remote_step05.png') no-repeat;}
 .remoteStep li:after {
 	content: "";
 	position: absolute;
 	top: 40px; left: 0;
 	width: 25px; height: 45px;
 	margin-left: -12px;
-	background: url('/keeworks/resource/images/contents/bg_step_arrow.png') no-repeat;
+	background: url('/resource/www/resource/images/contents/bg_step_arrow.png') no-repeat;
 }
 .remoteStep li.step1:after {display: none;}
 .remoteStep li b {
@@ -683,10 +686,10 @@
 	width: 110px; height: 110px;
 	margin-left: -55px;
 }
-.partnerList .item1 .box:after {background: url('/keeworks/resource/images/contents/img_partner01_01.png') no-repeat;}
-.partnerList .item2 .box:after {background: url('/keeworks/resource/images/contents/img_partner01_02.png') no-repeat;}
-.partnerList .item3 .box:after {background: url('/keeworks/resource/images/contents/img_partner01_03.png') no-repeat;}
-.partnerList .item4 .box:after {background: url('/keeworks/resource/images/contents/img_partner01_04.png') no-repeat;}
+.partnerList .item1 .box:after {background: url('/resource/www/resource/images/contents/img_partner01_01.png') no-repeat;}
+.partnerList .item2 .box:after {background: url('/resource/www/resource/images/contents/img_partner01_02.png') no-repeat;}
+.partnerList .item3 .box:after {background: url('/resource/www/resource/images/contents/img_partner01_03.png') no-repeat;}
+.partnerList .item4 .box:after {background: url('/resource/www/resource/images/contents/img_partner01_04.png') no-repeat;}
 
 .partnerList strong {
 	position: relative;
